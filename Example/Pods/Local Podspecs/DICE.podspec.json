@@ -1,0 +1,22 @@
+{
+  "name": "DICE",
+  "version": "0.1.0",
+  "summary": "A short description of DICE.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/atereshkov/DICE",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "atereshkov": "aliaksandr.terashkou@itechart-group.com"
+  },
+  "source": {
+    "git": "https://github.com/atereshkov/DICE.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DICE/Classes/**/*"
+}
