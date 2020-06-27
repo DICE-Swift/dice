@@ -20,9 +20,36 @@ it, simply add the following line to your Podfile:
 pod 'DICE'
 ```
 
-## Authors
+## Versioning
+
+Version numbering follows the [Semantic versioning](https://semver.org/) approach.
+
+## Communication and Help
+
+* If you need help, use [Stack Overflow](http://stackoverflow.com/questions/tagged/dice) (Tag 'dice') or [open an issue](https://github.com/dice-swift/dice/issues/new).
+* If you'd like to ask a general question, use [Stack Overflow](http://stackoverflow.com/questions/tagged/dice) or [open an issue](https://github.com/dice-swift/dice/issues/new).
+* If you've found a bug, [open an issue](https://github.com/dice-swift/dice/issues/new).
+* If you have a feature request, [open an issue](https://github.com/dice-swift/dice/issues/new).
+* If you want to contribute, submit a [pull request](https://github.com/dice-swift/dice/pulls).
+* If you use and enjoy DICE, please star the [project on GitHub](https://github.com/dice-swift/dice).
+
+## Contributing
+
+We’re really happy to accept contributions from the community, that’s the main reason why we open-sourced it!
+
+1. Fork it (https://github.com/DICE-Swift/dice/fork)
+2. Create your feature branch (git checkout -b feature/fooBar)
+3. Commit your changes (git commit -am 'Add some fooBar')
+4. Push to the branch (git push origin feature/fooBar)
+5. Create a new [Pull Request](https://github.com/DICE-Swift/dice/pulls)
+
+## Authors and Contributors
+
+### Authors
 
 // TODO
+
+### Contributors
 
 ## License
 
