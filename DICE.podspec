@@ -1,21 +1,7 @@
-#
-# Be sure to run `pod lib lint DICE.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'DICE'
   s.version          = '0.1.0'
   s.summary          = 'Lightweight DI framework for Swift'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
 A very alpha version of DICE - lightweight DI framework for Swift.
@@ -26,7 +12,6 @@ A very alpha version of DICE - lightweight DI framework for Swift.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Author1' => 'Email1' }
   s.source           = { :git => 'https://github.com/DICE-Swift/DICE.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 

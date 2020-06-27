@@ -3,7 +3,7 @@
 //  DICE
 //
 //  Created by atereshkov on 06/27/2020.
-//  Copyright (c) 2020 atereshkov. All rights reserved.
+//  Copyright (c) 2020 DICE. All rights reserved.
 //
 
 import UIKit
