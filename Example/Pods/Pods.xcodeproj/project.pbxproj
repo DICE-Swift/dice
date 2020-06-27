@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E29C50D3CDB46CBCBD20AFA13EB3D8D /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0CE0A6BA24A7975800158FB8 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE0A6B924A7975800158FB8 /* Dependencies.swift */; };
-		0CE0A6BC24A7978400158FB8 /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE0A6BB24A7978400158FB8 /* Inject.swift */; };
 		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1FE5C23F1BC485C54B92C32E78391F /* UIApplication+StrictKeyWindow.m */; };
 		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = E0956940883830C651240E754E3ECC52 /* UIImage+Diff.m */; };
 		14C511527597E5846AB2627F791C7D8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */; };
@@ -32,6 +30,8 @@
 		B25D795BDC4F426BC01EFC911F368B81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = EA718A72E676291836EBB46B85242155 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = D3067EAFD5B0A06885968D137840DB70 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB6EE30824A7A17B00B28F09 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE30624A7A17B00B28F09 /* Dependencies.swift */; };
+		CB6EE30924A7A17B00B28F09 /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE30724A7A17B00B28F09 /* Inject.swift */; };
 		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = E354F8FD537351F26F7949B4EBFA5101 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D7A6B74FBF92B0B2C9D9222AB5BADFAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		DE5CBD92EAF786A4CD722AD0257700A1 /* DICE-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51257F6E5CC356CCFCA0683FAEA9A066 /* DICE-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -70,8 +70,6 @@
 		04264D298A63DC21561CA8E2714EE2C8 /* Pods-DICE_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DICE_Tests.modulemap"; sourceTree = "<group>"; };
 		08594F703134CB2A12F55EC052C89CF7 /* Pods-DICE_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DICE_Example.modulemap"; sourceTree = "<group>"; };
 		0A3ACA72AE9B776E644F6D159AB3E80B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		0CE0A6B924A7975800158FB8 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
-		0CE0A6BB24A7978400158FB8 /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
 		13C8BBFE2D9E3A9C566221B1DE04E91C /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		1A332B0379D796587B349798A54FCF36 /* Pods-DICE_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DICE_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1B8ABEEA76ECDF1975B6D0787700F929 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
@@ -114,6 +112,8 @@
 		B784D224D31498DC605FE66BE57A5505 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B7998F51B00CAB296F8DB563A396B9AC /* Pods-DICE_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DICE_Example-frameworks.sh"; sourceTree = "<group>"; };
 		CB0C80C41B73FCE68C5D50B01902284B /* Pods-DICE_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DICE_Tests-Info.plist"; sourceTree = "<group>"; };
+		CB6EE30624A7A17B00B28F09 /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dependencies.swift; path = DICE/Classes/Dependencies.swift; sourceTree = "<group>"; };
+		CB6EE30724A7A17B00B28F09 /* Inject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Inject.swift; path = DICE/Classes/Inject.swift; sourceTree = "<group>"; };
 		D2B2193E944A9E321DEEF1D3711C3B06 /* Pods-DICE_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DICE_Example-umbrella.h"; sourceTree = "<group>"; };
 		D3067EAFD5B0A06885968D137840DB70 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		DE35F81C954881204729C569018D98C0 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
@@ -302,10 +302,10 @@
 		ACA6E404DB385D6A5119BF66AAA62FCD /* DICE */ = {
 			isa = PBXGroup;
 			children = (
+				CB6EE30624A7A17B00B28F09 /* Dependencies.swift */,
+				CB6EE30724A7A17B00B28F09 /* Inject.swift */,
 				03E9AD0041F7AB094076B11B726E6557 /* Pod */,
 				6DF47C7D2A358CCB5FEE225D1E845416 /* Support Files */,
-				0CE0A6B924A7975800158FB8 /* Dependencies.swift */,
-				0CE0A6BB24A7978400158FB8 /* Inject.swift */,
 			);
 			name = DICE;
 			path = ../..;
@@ -484,6 +484,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					DD653DCF41FD040E69EC5DF2CF1713E5 = {
+						LastSwiftMigration = 1150;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -550,9 +555,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CE0A6BC24A7978400158FB8 /* Inject.swift in Sources */,
-				0CE0A6BA24A7975800158FB8 /* Dependencies.swift in Sources */,
+				CB6EE30824A7A17B00B28F09 /* Dependencies.swift in Sources */,
 				8E6F17B5AD68513F6B66AE28D32B1E97 /* DICE-dummy.m in Sources */,
+				CB6EE30924A7A17B00B28F09 /* Inject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +613,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5EB053A16AB1FD8A07295D07A763A030 /* DICE.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -672,6 +678,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5EB053A16AB1FD8A07295D07A763A030 /* DICE.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -692,6 +699,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
