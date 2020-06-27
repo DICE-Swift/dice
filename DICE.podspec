@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DICE'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of DICE.'
+  s.summary          = 'Lightweight DI framework for Swift'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A very alpha version of DICE - lightweight DI framework for Swift.
                        DESC
 
   s.homepage         = 'https://github.com/dice-swift/dice'
@@ -31,6 +31,8 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'DICE/Classes/**/*'
+
+  s.swift_version = '4.2'
   
   # s.resource_bundles = {
   #   'DICE' => ['DICE/Assets/*.png']
