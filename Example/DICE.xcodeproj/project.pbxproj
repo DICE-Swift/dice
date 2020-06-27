@@ -13,7 +13,8 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* InjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* InjectTests.swift */; };
+		CB6EE30F24A7F63F00B28F09 /* InjectableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE30E24A7F63F00B28F09 /* InjectableService.swift */; };
 		F7F167081374D26E1DC5E89F /* Pods_DICE_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689712DA634E39B921A1F797 /* Pods_DICE_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,11 +40,12 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* DICE_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DICE_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* InjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectTests.swift; sourceTree = "<group>"; };
 		689712DA634E39B921A1F797 /* Pods_DICE_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DICE_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0FBD2F929117A2ECBF93C0 /* Pods-DICE_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DICE_Tests.release.xcconfig"; path = "Target Support Files/Pods-DICE_Tests/Pods-DICE_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		90FEBC6D2745A0B3B1F6E740 /* Pods_DICE_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DICE_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB4F3F5D01EB8F637D22550 /* Pods-DICE_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DICE_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DICE_Tests/Pods-DICE_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB6EE30E24A7F63F00B28F09 /* InjectableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableService.swift; sourceTree = "<group>"; };
 		E42C73A4873F17C8565EF11E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E805B474F72E6DB970390D04 /* DICE.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DICE.podspec; path = ../DICE.podspec; sourceTree = "<group>"; };
 		F65735F1A5B1D7A797D35C1E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -126,7 +128,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				CB6EE30D24A7F62E00B28F09 /* Doubles */,
+				CB6EE30B24A7F5BF00B28F09 /* Inject */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -157,6 +160,22 @@
 				689712DA634E39B921A1F797 /* Pods_DICE_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB6EE30B24A7F5BF00B28F09 /* Inject */ = {
+			isa = PBXGroup;
+			children = (
+				607FACEB1AFB9204008FA782 /* InjectTests.swift */,
+			);
+			path = Inject;
+			sourceTree = "<group>";
+		};
+		CB6EE30D24A7F62E00B28F09 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				CB6EE30E24A7F63F00B28F09 /* InjectableService.swift */,
+			);
+			path = Doubles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,7 +378,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				CB6EE30F24A7F63F00B28F09 /* InjectableService.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* InjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
