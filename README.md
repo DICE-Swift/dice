@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/DICE.svg?style=flat)](https://cocoapods.org/pods/DICE)
 [![Platform](https://img.shields.io/cocoapods/p/DICE.svg?style=flat)](https://cocoapods.org/pods/DICE)
 
+## Description
+
+DICE is a lightweight Swift framework that provides property based dependency injection for Swift 5.1+ projects.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
