@@ -45,11 +45,14 @@ We’re really happy to accept contributions from the community, that’s the ma
 
 ## Authors and Contributors
 
-### Authors
+### Authors (maintainers)
 
-// TODO
+* Anton Paliakou | [Github](https://github.com/Toni77777) | [Blog](https://tonidevblog.com/)
+* Alexander Tereshkov | [Github](https://github.com/atereshkov) | [Website](https://tereshkov.pw/)
 
 ### Contributors
+
+Want to be a first contributor? Please, suggest your improvements by using [Contributing](https://github.com/DICE-Swift/dice#contributing) section.
 
 ## License
 
