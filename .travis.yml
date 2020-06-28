@@ -6,6 +6,7 @@ xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone 11
 
 script:
   - pod lib lint
+  - set -o pipefail && xcodebuild build test -enableCodeCoverage YES -scheme DICE -project DICE.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=13.3,name=iPhone 11'
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
