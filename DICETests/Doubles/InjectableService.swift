@@ -1,8 +1,8 @@
 //
 //  InjectableService.swift
-//  DICE_Tests
+//  DICETests
 //
-//  Created by nb-058-41b on 6/28/20.
+//  Created by Alexander Tereshkov on 6/28/20.
 //  Copyright © 2020 DICE. All rights reserved.
 //
 

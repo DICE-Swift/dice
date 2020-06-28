@@ -3,6 +3,7 @@
 //  DICE
 //
 //  Created by Anton Polyakov on 6/27/20.
+//  Copyright © 2020 DICE. All rights reserved.
 //
 
 import Foundation

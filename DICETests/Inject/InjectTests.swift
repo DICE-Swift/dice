@@ -1,5 +1,13 @@
+//
+//  DICETests.swift
+//  DICETests
+//
+//  Created by Alexander Tereshkov on 6/28/20.
+//  Copyright © 2020 DICE. All rights reserved.
+//
+
 import XCTest
-import DICE
+@testable import DICE
 
 class InjectTests: XCTestCase {
     
