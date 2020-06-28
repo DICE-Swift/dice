@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		CB6EE3AB24A8F16B00B28F09 /* DICE_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE3AA24A8F16B00B28F09 /* DICE_ExampleTests.swift */; };
+		E8E505ADA7CAB843DA2EB605 /* Pods_DICE_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3992EBDC8E78197B6036A9B /* Pods_DICE_ExampleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,10 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		689712DA634E39B921A1F797 /* Pods_DICE_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DICE_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0FBD2F929117A2ECBF93C0 /* Pods-DICE_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DICE_Tests.release.xcconfig"; path = "Target Support Files/Pods-DICE_Tests/Pods-DICE_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		733839769828A0920076626D /* Pods-DICE_ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DICE_ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-DICE_ExampleTests/Pods-DICE_ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		90FEBC6D2745A0B3B1F6E740 /* Pods_DICE_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DICE_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3992EBDC8E78197B6036A9B /* Pods_DICE_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DICE_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F38741DF715BF4F3DB88FD /* Pods-DICE_ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DICE_ExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-DICE_ExampleTests/Pods-DICE_ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BFB4F3F5D01EB8F637D22550 /* Pods-DICE_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DICE_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DICE_Tests/Pods-DICE_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB6EE3A824A8F16B00B28F09 /* DICE_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DICE_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6EE3AA24A8F16B00B28F09 /* DICE_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DICE_ExampleTests.swift; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8E505ADA7CAB843DA2EB605 /* Pods_DICE_ExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,8 @@
 				217FF06F33D6F8A1F289DB25 /* Pods-DICE_Example.release.xcconfig */,
 				BFB4F3F5D01EB8F637D22550 /* Pods-DICE_Tests.debug.xcconfig */,
 				6B0FBD2F929117A2ECBF93C0 /* Pods-DICE_Tests.release.xcconfig */,
+				B3F38741DF715BF4F3DB88FD /* Pods-DICE_ExampleTests.debug.xcconfig */,
+				733839769828A0920076626D /* Pods-DICE_ExampleTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -136,6 +143,7 @@
 			children = (
 				90FEBC6D2745A0B3B1F6E740 /* Pods_DICE_Example.framework */,
 				689712DA634E39B921A1F797 /* Pods_DICE_Tests.framework */,
+				B3992EBDC8E78197B6036A9B /* Pods_DICE_ExampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,6 +168,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
+				D9BA189FC3D0443B68B1E472 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +183,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB6EE3AF24A8F16B00B28F09 /* Build configuration list for PBXNativeTarget "DICE_ExampleTests" */;
 			buildPhases = (
+				F06482D72AB652C9713D1C27 /* [CP] Check Pods Manifest.lock */,
 				CB6EE3A424A8F16B00B28F09 /* Sources */,
 				CB6EE3A524A8F16B00B28F09 /* Frameworks */,
 				CB6EE3A624A8F16B00B28F09 /* Resources */,
@@ -266,6 +276,46 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-DICE_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9BA189FC3D0443B68B1E472 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DICE_Example/Pods-DICE_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DICE/DICE.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DICE.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DICE_Example/Pods-DICE_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F06482D72AB652C9713D1C27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DICE_ExampleTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -453,6 +503,7 @@
 		};
 		CB6EE3B024A8F16B00B28F09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3F38741DF715BF4F3DB88FD /* Pods-DICE_ExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -482,6 +533,7 @@
 		};
 		CB6EE3B124A8F16B00B28F09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 733839769828A0920076626D /* Pods-DICE_ExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

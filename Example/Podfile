@@ -3,7 +3,7 @@ use_frameworks!
 target 'DICE_Example' do
   pod 'DICE', :path => '../'
 
-  target 'DICE_Tests' do
+  target 'DICE_ExampleTests' do
     inherit! :search_paths
   end
 end
