@@ -9,4 +9,4 @@ script:
   - set -o pipefail && xcodebuild build test -enableCodeCoverage YES -scheme DICE -project DICE.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=13.5,name=iPhone 11'
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -J 'DICE'
