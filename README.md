@@ -1,6 +1,7 @@
 # DICE
 
 [![CI Status](https://img.shields.io/travis/dice-swift/DICE.svg?style=flat)](https://travis-ci.org/DICE-Swift/dice.svg?branch=master)
+[![codecov](https://codecov.io/gh/DICE-Swift/dice/branch/master/graph/badge.svg)](https://codecov.io/gh/DICE-Swift/dice)
 [![Version](https://img.shields.io/cocoapods/v/DICE.svg?style=flat)](https://cocoapods.org/pods/DICE)
 [![License](https://img.shields.io/cocoapods/l/DICE.svg?style=flat)](https://cocoapods.org/pods/DICE)
 [![Platform](https://img.shields.io/cocoapods/p/DICE.svg?style=flat)](https://cocoapods.org/pods/DICE)
