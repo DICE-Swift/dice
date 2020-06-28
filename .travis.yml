@@ -5,4 +5,7 @@ xcode_scheme: DICE-Example
 xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone 11
 
 script:
-- pod lib lint
+  - pod lib lint
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
