@@ -14,7 +14,9 @@ protocol SessionType {}
 class Session: SessionType {
     
     init() {
-        Dependencies.shared.register({ DummyService(result: "123") as DummyServiceType })
+        Dependencies.shared.register(type: DummyServiceType.self) { _ in
+            return DummyService(result: "123")
+        }
     }
     
 }
