@@ -12,16 +12,16 @@ public final class Dependencies {
 
     public static let shared = Dependencies()
 
-    private var dependencies = [String: () -> Any]()
+    private var dependencies = [String: FactoryClosure]()
 
-    public func register<T>(_ dependency: @escaping () -> T, with name: String? = nil) {
+    public func register<T>(type: T.Type, with name: String? = nil, factory: @escaping FactoryClosure) {
         let key = name ?? String(describing: T.self)
-        dependencies[key] = dependency
+        dependencies[key] = factory
     }
 
     public func resolve<T>(with name: String? = nil) -> T {
         let key = name ?? String(describing: T.self)
-        guard let service: T = dependencies[key]?() as? T else {
+        guard let service: T = dependencies[key]?(self) as? T else {
             fatalError("Dependency \(T.self) not resolved")
         }
         return service

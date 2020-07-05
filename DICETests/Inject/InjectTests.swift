@@ -17,8 +17,13 @@ class InjectTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        Dependencies.shared.register({ InjectableService() as InjectableServiceType })
-        Dependencies.shared.register({ InjectableService() as InjectableServiceType }, with: "injectableService2")
+        Dependencies.shared.register(type: InjectableServiceType.self) { _ in
+            return InjectableService()
+        }
+        
+        Dependencies.shared.register(type: InjectableServiceType.self, with: "injectableService2") { _ in
+            return InjectableService()
+        }
     }
     
     func testInjectatbleServiceShouldBeAccessible() {
