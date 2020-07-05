@@ -7,18 +7,18 @@
 //
 
 import UIKit
+import DICE
 
 class ViewController: UIViewController {
-
+    
+    @Inject var dummyService: DummyServiceType
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let result = dummyService.test()
+        Swift.print(result)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
 }
 
