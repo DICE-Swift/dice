@@ -7,14 +7,16 @@
 
 class LazyObject {
     
-    var initBlock: () -> Any
+    var initBlock: (DIContainer) -> Any
+    var container: DIContainer
     
-    init(initBlock: @escaping () -> Any) {
+    init(initBlock: @escaping (DIContainer) -> Any, container: DIContainer) {
         self.initBlock = initBlock
+        self.container = container
     }
     
     func resolve<T>() -> T {
-        return self.initBlock() as! T
+        return self.initBlock(container) as! T
     }
     
 }

@@ -22,8 +22,8 @@ public final class DIContainer: CustomStringConvertible {
     }
     
     @discardableResult
-    public func register<T>(as type: T.Type = T.self, _ initialize: @escaping () -> T) -> DIContainerContext<T> {
-        let initer = LazyObject(initBlock: initialize)
+    public func register<T>(as type: T.Type = T.self, _ initialize: @escaping (DIContainer) -> T) -> DIContainerContext<T> {
+        let initer = LazyObject(initBlock: initialize, container: self)
         return DIContainerContext(container: self, object: DIObject(lazy: initer, type: type))
     }
     

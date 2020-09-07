@@ -27,6 +27,7 @@
 		CBC79C0A250667CB00DA8BE0 /* EnvironmentObservableInjected.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C09250667CB00DA8BE0 /* EnvironmentObservableInjected.swift */; };
 		CBC79C0D250668FF00DA8BE0 /* DIContainerEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C0C250668FF00DA8BE0 /* DIContainerEnvironmentKey.swift */; };
 		CBC79C0F2506698800DA8BE0 /* DICE+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C0E2506698800DA8BE0 /* DICE+SwiftUI.swift */; };
+		CBC79C112506954700DA8BE0 /* InternalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C102506954700DA8BE0 /* InternalService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		CBC79C09250667CB00DA8BE0 /* EnvironmentObservableInjected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObservableInjected.swift; sourceTree = "<group>"; };
 		CBC79C0C250668FF00DA8BE0 /* DIContainerEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerEnvironmentKey.swift; sourceTree = "<group>"; };
 		CBC79C0E2506698800DA8BE0 /* DICE+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DICE+SwiftUI.swift"; sourceTree = "<group>"; };
+		CBC79C102506954700DA8BE0 /* InternalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				CB6EE3A224A8F11000B28F09 /* InjectableService.swift */,
+				CBC79C102506954700DA8BE0 /* InternalService.swift */,
 			);
 			path = Doubles;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			files = (
 				CBC79C042506632300DA8BE0 /* ResolveTests.swift in Sources */,
 				CB6EE3A324A8F11000B28F09 /* InjectableService.swift in Sources */,
+				CBC79C112506954700DA8BE0 /* InternalService.swift in Sources */,
 				CB6EE39024A8EF1900B28F09 /* InjectedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

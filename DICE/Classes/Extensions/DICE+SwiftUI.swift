@@ -21,7 +21,7 @@ public extension View {
     // Inject property into container
     func environmentInject<Value>(_ value: Value) -> some View {
         return self.transformEnvironment(\.container) { con in
-            con.register({ value })
+            con.register({ _ in value })
         }
     }
 }
