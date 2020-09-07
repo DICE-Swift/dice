@@ -125,7 +125,7 @@ class ViewController: UIViewController {
 
 ## Advanced usage
 
-### Scopes
+## Scopes
 
 **Default scope** is `DIScope.objectGraph`.
 
@@ -148,6 +148,16 @@ Object will be instantiated only after first call.
 
 Dependency instance is lazily created one per object graph.
 Object will be instantiated only after first call.
+
+### How to set scope
+
+You can specify scopy by using `.scope(DIScope)` when registering an object. If no scope set then default scope `DIScope.objectGraph` is used.
+
+```
+container.register(InjectableServiceType.self) { _ in
+    return InjectableService()
+}.scope(.objectGraph)
+```
 
 
 ## Versioning
