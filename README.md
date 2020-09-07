@@ -10,10 +10,6 @@ DICE is a lightweight Swift framework that provides property based dependency in
 DICE provides service locator pattern with the help of containers. You could easily inject your dependencies through property wrappers or through DI container.
 Dice supports different scopes (singleton, lazy weak, lazy prototype, lazy object graph). So you can choose which one is better for your case.
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
 
 * Swift 5.1
@@ -27,6 +23,10 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'DICE'
 ```
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Usage
 
