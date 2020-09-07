@@ -27,7 +27,7 @@ it, simply add the following line to your Podfile:
 pod 'DICE'
 ```
 
-## How to use DICE
+## Usage
 
 ### Inject through DI container
 
@@ -40,7 +40,7 @@ let container = DIContainer()
 **2. Register your instances**
 
 ```swift
-container.register(as: InternalServiceType.self) { _ in
+container.register(InternalServiceType.self) { _ in
     return InternalService()
 }
 ```
@@ -80,7 +80,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        container.register(as: DummyServiceType.self) { _ in
+        container.register(DummyServiceType.self) { _ in
             return DummyService()
         }
         
