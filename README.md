@@ -9,19 +9,37 @@
 DICE is a lightweight Swift framework that provides property based dependency injection for Swift 5.1+ projects.
 DICE provides service locator pattern with the help of containers. You could easily inject your dependencies through property wrappers or through DI container.
 
-## How To
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Requirements
+
+* Swift 5.1
+* iOS 13.0
+
+## Installation
+
+DICE is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'DICE'
+```
+
+## How to use DICE
 
 ### Inject through DI container
 
 **1. Declare your container**
 
-```
+```swift
 let container = DIContainer()
 ```
 
 **2. Register your instances**
 
-```
+```swift
 container.register(as: InternalServiceType.self) { _ in
     return InternalService()
 }
@@ -29,7 +47,7 @@ container.register(as: InternalServiceType.self) { _ in
 
 E.g. DummyServiceType is just a protocol and InternalService is an implementation.
 
-```
+```swift
 protocol DummyServiceType {
     func test()
 }
@@ -43,7 +61,7 @@ class DummyService: DummyServiceType {
 
 **3. Pass container to DICE**
 
-```
+```swift
 DICE.use(container)
 ```
 
@@ -51,7 +69,7 @@ DICE.use(container)
 
 **Using DIContainer**
 
-```
+```swift
 import UIKit
 import DICE
 
@@ -80,7 +98,7 @@ class ViewController: UIViewController {
 
 **Using @Injected Property Wrapper**
 
-```
+```swift
 import UIKit
 import DICE
 
@@ -106,24 +124,6 @@ class ViewController: UIViewController {
 ### Advanced usage
 
 
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-* Swift 5.1
-* iOS 13.0
-
-## Installation
-
-DICE is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'DICE'
-```
 
 ## Versioning
 
