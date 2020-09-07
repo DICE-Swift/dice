@@ -1,5 +1,5 @@
 //
-//  DIComponentContext.swift
+//  DIContainerBuilder.swift
 //  DICE
 //
 //  Created by Alexander Tereshkov on 9/6/20.

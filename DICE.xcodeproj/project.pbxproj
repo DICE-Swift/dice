@@ -15,7 +15,7 @@
 		CBC79BF52506585000DA8BE0 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BE82506584F00DA8BE0 /* Injected.swift */; };
 		CBC79BF62506585000DA8BE0 /* DIObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BE92506585000DA8BE0 /* DIObject.swift */; };
 		CBC79BF82506585000DA8BE0 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BEB2506585000DA8BE0 /* DIContainer.swift */; };
-		CBC79BF92506585000DA8BE0 /* DIContainerContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BEC2506585000DA8BE0 /* DIContainerContext.swift */; };
+		CBC79BF92506585000DA8BE0 /* DIContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BEC2506585000DA8BE0 /* DIContainerBuilder.swift */; };
 		CBC79BFA2506585000DA8BE0 /* DICE.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BED2506585000DA8BE0 /* DICE.swift */; };
 		CBC79BFB2506585000DA8BE0 /* DIContainerStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BEE2506585000DA8BE0 /* DIContainerStorage.swift */; };
 		CBC79BFC2506585000DA8BE0 /* LazyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BEF2506585000DA8BE0 /* LazyObject.swift */; };
@@ -52,7 +52,7 @@
 		CBC79BE82506584F00DA8BE0 /* Injected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
 		CBC79BE92506585000DA8BE0 /* DIObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIObject.swift; sourceTree = "<group>"; };
 		CBC79BEB2506585000DA8BE0 /* DIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
-		CBC79BEC2506585000DA8BE0 /* DIContainerContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainerContext.swift; sourceTree = "<group>"; };
+		CBC79BEC2506585000DA8BE0 /* DIContainerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainerBuilder.swift; sourceTree = "<group>"; };
 		CBC79BED2506585000DA8BE0 /* DICE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DICE.swift; sourceTree = "<group>"; };
 		CBC79BEE2506585000DA8BE0 /* DIContainerStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainerStorage.swift; sourceTree = "<group>"; };
 		CBC79BEF2506585000DA8BE0 /* LazyObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyObject.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 				CBC79C052506671F00DA8BE0 /* Extensions */,
 				CBC79BED2506585000DA8BE0 /* DICE.swift */,
 				CBC79BEB2506585000DA8BE0 /* DIContainer.swift */,
-				CBC79BEC2506585000DA8BE0 /* DIContainerContext.swift */,
+				CBC79BEC2506585000DA8BE0 /* DIContainerBuilder.swift */,
 				CBC79BEE2506585000DA8BE0 /* DIContainerStorage.swift */,
 				CBC79BE92506585000DA8BE0 /* DIObject.swift */,
 				CBC79BF02506585000DA8BE0 /* InjectableProperty.swift */,
@@ -312,7 +312,7 @@
 				CBC79C142506ADAE00DA8BE0 /* DIScope.swift in Sources */,
 				CBC79BFD2506585000DA8BE0 /* InjectableProperty.swift in Sources */,
 				CBC79C0A250667CB00DA8BE0 /* EnvironmentObservableInjected.swift in Sources */,
-				CBC79BF92506585000DA8BE0 /* DIContainerContext.swift in Sources */,
+				CBC79BF92506585000DA8BE0 /* DIContainerBuilder.swift in Sources */,
 				CBC79BFB2506585000DA8BE0 /* DIContainerStorage.swift in Sources */,
 				CBC79BFE2506585000DA8BE0 /* WeakObject.swift in Sources */,
 				CBC79BF52506585000DA8BE0 /* Injected.swift in Sources */,

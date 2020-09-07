@@ -6,6 +6,7 @@
 //
 
 class WeakObject<T: AnyObject>: CustomDebugStringConvertible {
+    
     weak var value: T?
     
     init(value: T) {
@@ -17,4 +18,5 @@ class WeakObject<T: AnyObject>: CustomDebugStringConvertible {
         let type = String(describing: T.self)
         return String(format: "<Weak<%@>>: %@, value: %@", type, address.debugDescription, value.debugDescription)
     }
+    
 }

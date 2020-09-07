@@ -12,11 +12,11 @@ public struct DICE {
     internal private(set) static var sharedContainer: DIContainer = DIContainer()
     
     public enum Defaults {
-        /// Set default lifetime for container instances. `DILifeCycle.single` is set by default
+        /// Set default lifetime for container instances. `DIScope.single` is set by default
         public static var scope: DIScope = .single
     }
     
-    /// When container is set for usage then dependencies can be resolved through environment variables `Injected`, `EnvironmentObservedInject` and `EnvironmentInject`
+    /// When container is set for usage then dependencies can be resolved through environment variables `Injected`, `EnvironmentObservableInjected` and `EnvironmentInjected`
     public static func use(_ container: DIContainer) {
         self.sharedContainer = container
         container.didSetSharedContainer()
