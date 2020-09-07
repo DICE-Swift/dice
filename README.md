@@ -161,7 +161,17 @@ container.register(InjectableServiceType.self) { _ in
 
 ## Using container resolver when injecting
 
-Let's say `InternalServic` requires to recieve `InternalServiceType` in the initializer.
+Let's say `InjectableService` requires to recieve `InternalServiceType` in the initializer as a dependency.
+
+```swift
+class InjectableService: InjectableServiceType {
+    let internalService: InternalServiceType
+    
+    init(internalService: InternalServiceType) {
+        self.internalService = internalService
+    }
+}
+```
 
 1. Register `InternalServiceType`
 
@@ -171,7 +181,7 @@ container.register(InternalServiceType.self) { _ in
 }
 ```
 
-2. Resolving `InternalServiceType` from container when registering `InjectableServiceType` and pass it to the `InjectableService`
+2. Resolve `InternalServiceType` from container when registering `InjectableServiceType` and pass it to the `InjectableService`
 
 ```swift
 container.register(InjectableServiceType.self) { container in
