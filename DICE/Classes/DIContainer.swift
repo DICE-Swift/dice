@@ -12,6 +12,9 @@ public final class DIContainer: CustomStringConvertible {
     lazy var resolveStorage: [ObjectIdentifier: Any] = [:]
     private(set) var containerStorage = DIContainerStorage()
     
+    lazy var resolveObjectGraphStorage: [ObjectIdentifier: Any] = [:]
+    var objectGraphStackDepth: Int = 0
+    
     public var description: String {
         return containerStorage.storedObjects.description
     }
@@ -54,8 +57,8 @@ private extension DIContainer {
         resolveStorage[ObjectIdentifier(object.type)] = resolvedObject
     }
     
-    func makeObject(for type: Any.Type, bundle: Bundle?) -> Any? {
-        let object = findObject(for: type, bundle: bundle)
+    func makeObject(for type: Any.Type, bundle: Bundle?, usingObject: DIObject? = nil) -> Any? {
+        let object = usingObject ?? findObject(for: type, bundle: bundle)
         let key = ObjectIdentifier(object.type)
         
         switch object.scope {
@@ -63,6 +66,42 @@ private extension DIContainer {
             return resolveStorage[key]
         case .prototype:
             return object.lazy.resolve()
+        case .weak:
+            if let weakReference = resolveStorage[key] as? WeakObject<AnyObject> {
+                return weakReference.value
+            }
+            
+            let resolvedObject = object.lazy.resolve() as AnyObject
+            let weakObject = WeakObject(value: resolvedObject)
+            resolveStorage[key] = weakObject
+            return resolvedObject
+        case .objectGraph:
+            defer { objectGraphStackDepth -= 1 }
+            
+            if let object = resolveObjectGraphStorage[key] {
+                if objectGraphStackDepth == 0 {
+                    resolveObjectGraphStorage.removeAll()
+                }
+                return object
+            }
+            
+            objectGraphStackDepth += 1
+            let value = object.lazy.resolve() as Any
+            resolveObjectGraphStorage[key] = value
+            
+            let mirror = Mirror(reflecting: value)
+            
+            for child in mirror.children {
+                if let injectable = child.value as? InjectableProperty {
+                    let subject = findObject(for: injectable.type, bundle: injectable.bundle)
+                    if subject.scope != .single && subject.scope != .weak {
+                        objectGraphStackDepth += 1
+                        resolveObjectGraphStorage[ObjectIdentifier(subject.type)] = self.makeObject(for: subject.type, bundle: subject.bundle, usingObject: subject)
+                    }
+                }
+            }
+            
+            return value
         }
     }
     

@@ -16,8 +16,12 @@ protocol InjectableServiceType {
 
 class InjectableService: InjectableServiceType {
     
+    init() {
+        Swift.print("Init InjectableService")
+    }
+    
     func test() {
-        Swift.print("InjectableService")
+        Swift.print("InjectableService test()")
     }
     
 }

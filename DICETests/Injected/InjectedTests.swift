@@ -18,13 +18,13 @@ class InjectedTests: XCTestCase {
         
         container.register(InternalServiceType.self) { _ in
             return InternalService()
-        }
+        }.scope(.objectGraph)
         
         container.register(InjectableServiceType.self) { container in
             let service: InternalServiceType = container.resolve()
             service.test()
             return InjectableService()
-        }
+        }.scope(.objectGraph)
         
         DICE.use(container)
     }

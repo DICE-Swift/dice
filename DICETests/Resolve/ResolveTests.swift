@@ -18,7 +18,7 @@ class ResolveTests: XCTestCase {
         
         container.register(InjectableServiceType.self) { _ in
             return InjectableService()
-        }
+        }.scope(.objectGraph)
         
         DICE.use(container)
     }
