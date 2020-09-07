@@ -13,7 +13,7 @@ A very alpha version of DICE - lightweight DI framework for Swift.
   s.author           = { 'Author1' => 'Email1' }
   s.source           = { :git => 'https://github.com/DICE-Swift/DICE.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'DICE/Classes/**/*'
 
