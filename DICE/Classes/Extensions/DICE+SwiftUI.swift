@@ -6,7 +6,7 @@
 //  Copyright © 2020 DICE. All rights reserved.
 //
 
-#if canImport(SwiftUI)
+#if canImport(SwiftUI) && canImport(Combine)
 
 import SwiftUI
 
