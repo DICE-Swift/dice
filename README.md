@@ -30,7 +30,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Usage
 
-### Inject through DI container
+## Inject through DI container
 
 **1. Declare your container**
 
@@ -119,9 +119,41 @@ class ViewController: UIViewController {
 }
 ```
 
-### Inject in SwiftUI
+## Inject in SwiftUI
 
+### EnvironmentObservableInjected
 
+Dynamic view property wrapper that subscribes to a `ObservableObject` automatically invalidating the view when it changes.
+
+```swift
+struct ContentView: View {
+	
+	@EnvironmentObservableInjected var viewModel: ContentViewModel
+
+	var body: some View {
+		HStack {
+			Text(viewModel.title)
+		}.onAppear { self.viewModel.startUpdatingTitle() }
+	}
+}
+```
+
+### EnvironmentInjected
+
+Property wrapper that inject object from environment container. Read only object. Typically used for non-mutating objects.
+
+```swift
+struct ContentView: View {
+	
+	@EnvironmentInjected var service: WebService
+
+	var body: some View {
+		HStack {
+			Text("Waiting...")
+		}.onAppear { self.webService.auth() }
+	}
+}
+```
 
 ## Advanced usage
 
