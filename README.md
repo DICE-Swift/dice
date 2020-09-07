@@ -153,10 +153,31 @@ Object will be instantiated only after first call.
 
 You can specify scopy by using `.scope(DIScope)` when registering an object. If no scope set then default scope `DIScope.objectGraph` is used.
 
-```
+```swift
 container.register(InjectableServiceType.self) { _ in
     return InjectableService()
 }.scope(.objectGraph)
+```
+
+## Using container resolver when injecting
+
+Let's say `InternalServic` requires to recieve `InternalServiceType` in the initializer.
+
+1. Register `InternalServiceType`
+
+```swift
+container.register(InternalServiceType.self) { _ in
+    return InternalService()
+}
+```
+
+2. Resolving `InternalServiceType` from container when registering `InjectableServiceType` and pass it to the `InjectableService`
+
+```swift
+container.register(InjectableServiceType.self) { container in
+    let internalService: InternalServiceType = container.resolve()
+    return InjectableService(internalService: internalService)
+}
 ```
 
 
