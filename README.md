@@ -122,8 +122,9 @@ class ViewController: UIViewController {
 
 
 
-### Advanced usage
+## Advanced usage
 
+### Scopes
 
 
 ## Versioning
@@ -149,12 +150,12 @@ We’re really happy to accept contributions from the community, that’s the ma
 4. Push to the branch (git push origin feature/fooBar)
 5. Create a new [Pull Request](https://github.com/DICE-Swift/dice/pulls)
 
-## Authors and Contributors
+## Contributors
 
-### Authors (maintainers)
+### Maintainers
 
-* Anton Paliakou | [Github](https://github.com/Toni77777) | [Blog](https://tonidevblog.com/)
 * Alexander Tereshkov | [Github](https://github.com/atereshkov) | [Website](https://tereshkov.pw/)
+* Anton Paliakou | [Github](https://github.com/Toni77777) | [Blog](https://tonidevblog.com/)
 
 ### Contributors
 
