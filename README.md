@@ -127,14 +127,14 @@ Dynamic view property wrapper that subscribes to a `ObservableObject` automatica
 
 ```swift
 struct ContentView: View {
-	
-	@EnvironmentObservableInjected var viewModel: ContentViewModel
 
-	var body: some View {
-		HStack {
-			Text(viewModel.title)
-		}.onAppear { self.viewModel.startUpdatingTitle() }
-	}
+    @EnvironmentObservableInjected var viewModel: ContentViewModel
+
+    var body: some View {
+        HStack {
+            Text(viewModel.title)
+        .onAppear { self.viewModel.startUpdatingTitle() }
+    }
 }
 ```
 
@@ -144,14 +144,14 @@ Property wrapper that inject object from environment container. Read only object
 
 ```swift
 struct ContentView: View {
-	
-	@EnvironmentInjected var service: WebService
 
-	var body: some View {
-		HStack {
-			Text("Waiting...")
-		}.onAppear { self.webService.auth() }
-	}
+    @EnvironmentInjected var service: WebService
+
+    var body: some View {
+        HStack {
+            Text("Waiting...")
+        }.onAppear { self.webService.auth() }
+    }
 }
 ```
 
