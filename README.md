@@ -127,6 +127,28 @@ class ViewController: UIViewController {
 
 ### Scopes
 
+**Default scope** is `DIScope.objectGraph`.
+
+* `DIScope.single`
+
+Dependency is created per container as single instance.
+Recommended to use for singletones that should be instantiated as soon as injected in the `DIContainer`.
+
+* `DIScope.weak`
+
+Dependency is lazily created one per container, but destroys when dependency object will deinit.
+Object will be instantiated only after first call.
+
+* `DIScope.prototype`
+
+Dependency instance is lazily created each time.
+Object will be instantiated only after first call.
+
+* `DIScope.objectGraph`
+
+Dependency instance is lazily created one per object graph.
+Object will be instantiated only after first call.
+
 
 ## Versioning
 
