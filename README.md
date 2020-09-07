@@ -6,15 +6,115 @@
 [![License](https://img.shields.io/cocoapods/l/DICE.svg?style=flat)](https://cocoapods.org/pods/DICE)
 [![Platform](https://img.shields.io/cocoapods/p/DICE.svg?style=flat)](https://cocoapods.org/pods/DICE)
 
-## Description
-
 DICE is a lightweight Swift framework that provides property based dependency injection for Swift 5.1+ projects.
+DICE provides service locator pattern with the help of containers. You could easily inject your dependencies through property wrappers or through DI container.
+
+## How To
+
+### Inject through DI container
+
+**1. Declare your container**
+
+```
+let container = DIContainer()
+```
+
+**2. Register your instances**
+
+```
+container.register(as: InternalServiceType.self) { _ in
+    return InternalService()
+}
+```
+
+E.g. DummyServiceType is just a protocol and InternalService is an implementation.
+
+```
+protocol DummyServiceType {
+    func test()
+}
+
+class DummyService: DummyServiceType {
+    func test() {
+        Swift.print("DummyService")
+    }
+}
+```
+
+**3. Pass container to DICE**
+
+```
+DICE.use(container)
+```
+
+**4. Resolve instance**
+
+**Using DIContainer**
+
+```
+import UIKit
+import DICE
+
+class ViewController: UIViewController {
+    
+    let container = DIContainer()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        container.register(as: DummyServiceType.self) { _ in
+            return DummyService()
+        }
+        
+        DICE.use(container)
+        
+        let service: DummyServiceType = container.resolve()
+        service.test()
+        
+        // It should print "DummyService" in Xcode console
+        // If you get error here, so check previous steps or open an issue
+    }
+    
+}
+```
+
+**Using @Injected Property Wrapper**
+
+```
+import UIKit
+import DICE
+
+class ViewController: UIViewController {
+    
+    @Injected var dummyService: DummyServiceType
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        dummyService.test()
+        // It should print "DummyService" in Xcode console
+        // If you get error here, so check previous steps or open an issue
+    }
+    
+}
+```
+
+### Inject in SwiftUI
+
+
+
+### Advanced usage
+
+
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+* Swift 5.1
+* iOS 13.0
 
 ## Installation
 
