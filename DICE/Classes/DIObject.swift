@@ -12,12 +12,12 @@ class DIObject: CustomDebugStringConvertible {
     let lazy: LazyObject
     let type: Any.Type
     
-    var lifeCycle: DIScope = DICE.Defaults.scope
+    var scope: DIScope = DICE.Defaults.scope
     
     var debugDescription: String {
         let address = Unmanaged.passUnretained(self).toOpaque()
         let type = String(describing: self.type)
-        return String(format: "[DIObject <%@>] %@ - %@", address.debugDescription, type, lifeCycle.debugDescription)
+        return String(format: "[DIObject <%@>] %@ - %@", address.debugDescription, type, scope.debugDescription)
     }
     
     var bundle: Bundle? {

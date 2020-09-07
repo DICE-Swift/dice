@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class DIContainerContext<T> {
+public class DIContainerBuilder<T> {
     
     private var manager: DIContainerStorage
     private var object: DIObject
@@ -19,13 +19,13 @@ public class DIContainerContext<T> {
     }
     
     @discardableResult
-    public func lifeCycle(_ lifeCycle: DIScope) -> DIContainerContext<T> {
-        object.lifeCycle = lifeCycle
+    public func scope(_ scope: DIScope) -> DIContainerBuilder<T> {
+        object.scope = scope
         return self
     }
     
     @discardableResult
-    public func `as`<U>(_ type: U.Type) -> DIContainerContext<T> {
+    public func `as`<U>(_ type: U.Type) -> DIContainerBuilder<T> {
         manager.insert(object, forType: type)
         return self
     }

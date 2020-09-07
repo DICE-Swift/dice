@@ -11,7 +11,6 @@
 		CB6EE39024A8EF1900B28F09 /* InjectedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE38F24A8EF1900B28F09 /* InjectedTests.swift */; };
 		CB6EE39224A8EF1900B28F09 /* DICE.h in Headers */ = {isa = PBXBuildFile; fileRef = CB6EE38424A8EF1900B28F09 /* DICE.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB6EE3A324A8F11000B28F09 /* InjectableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE3A224A8F11000B28F09 /* InjectableService.swift */; };
-		CB83072D24B226AA005AA6F9 /* FactoryClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83072C24B226AA005AA6F9 /* FactoryClosure.swift */; };
 		CBC79BF42506585000DA8BE0 /* NSRecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BE72506584F00DA8BE0 /* NSRecursiveLock.swift */; };
 		CBC79BF52506585000DA8BE0 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BE82506584F00DA8BE0 /* Injected.swift */; };
 		CBC79BF62506585000DA8BE0 /* DIObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BE92506585000DA8BE0 /* DIObject.swift */; };
@@ -28,6 +27,7 @@
 		CBC79C0D250668FF00DA8BE0 /* DIContainerEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C0C250668FF00DA8BE0 /* DIContainerEnvironmentKey.swift */; };
 		CBC79C0F2506698800DA8BE0 /* DICE+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C0E2506698800DA8BE0 /* DICE+SwiftUI.swift */; };
 		CBC79C112506954700DA8BE0 /* InternalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C102506954700DA8BE0 /* InternalService.swift */; };
+		CBC79C142506ADAE00DA8BE0 /* DIScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C132506ADAE00DA8BE0 /* DIScope.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,6 @@
 		CB6EE38F24A8EF1900B28F09 /* InjectedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedTests.swift; sourceTree = "<group>"; };
 		CB6EE39124A8EF1900B28F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB6EE3A224A8F11000B28F09 /* InjectableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableService.swift; sourceTree = "<group>"; };
-		CB83072C24B226AA005AA6F9 /* FactoryClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryClosure.swift; sourceTree = "<group>"; };
 		CBC79BE72506584F00DA8BE0 /* NSRecursiveLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSRecursiveLock.swift; sourceTree = "<group>"; };
 		CBC79BE82506584F00DA8BE0 /* Injected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
 		CBC79BE92506585000DA8BE0 /* DIObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIObject.swift; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		CBC79C0C250668FF00DA8BE0 /* DIContainerEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerEnvironmentKey.swift; sourceTree = "<group>"; };
 		CBC79C0E2506698800DA8BE0 /* DICE+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DICE+SwiftUI.swift"; sourceTree = "<group>"; };
 		CBC79C102506954700DA8BE0 /* InternalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalService.swift; sourceTree = "<group>"; };
+		CBC79C132506ADAE00DA8BE0 /* DIScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIScope.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +139,7 @@
 				CBC79BF02506585000DA8BE0 /* InjectableProperty.swift */,
 				CBC79BEF2506585000DA8BE0 /* LazyObject.swift */,
 				CBC79BF12506585000DA8BE0 /* WeakObject.swift */,
-				CB83072C24B226AA005AA6F9 /* FactoryClosure.swift */,
+				CBC79C132506ADAE00DA8BE0 /* DIScope.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -309,9 +309,9 @@
 				CBC79BF42506585000DA8BE0 /* NSRecursiveLock.swift in Sources */,
 				CBC79BFC2506585000DA8BE0 /* LazyObject.swift in Sources */,
 				CBC79BFA2506585000DA8BE0 /* DICE.swift in Sources */,
+				CBC79C142506ADAE00DA8BE0 /* DIScope.swift in Sources */,
 				CBC79BFD2506585000DA8BE0 /* InjectableProperty.swift in Sources */,
 				CBC79C0A250667CB00DA8BE0 /* EnvironmentObservableInjected.swift in Sources */,
-				CB83072D24B226AA005AA6F9 /* FactoryClosure.swift in Sources */,
 				CBC79BF92506585000DA8BE0 /* DIContainerContext.swift in Sources */,
 				CBC79BFB2506585000DA8BE0 /* DIContainerStorage.swift in Sources */,
 				CBC79BFE2506585000DA8BE0 /* WeakObject.swift in Sources */,

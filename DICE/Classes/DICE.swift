@@ -21,25 +21,5 @@ public struct DICE {
         self.sharedContainer = container
         container.didSetSharedContainer()
     }
-}
-
-public enum DIScope {
-    /// Dependency is created per container as single instance.
-    case single
-    
-    /// Dependency instance is created each time.
-    case prototype
-}
-
-extension DIScope: CustomDebugStringConvertible {
-    
-    public var debugDescription: String {
-        switch self {
-            case .single:
-                return "single"
-            case .prototype:
-                return "prototype"
-        }
-    }
     
 }

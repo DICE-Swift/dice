@@ -10,21 +10,16 @@ import Foundation
 public final class DIContainer: CustomStringConvertible {
     
     lazy var resolveStorage: [ObjectIdentifier: Any] = [:]
+    private(set) var containerStorage = DIContainerStorage()
     
     public var description: String {
         return containerStorage.storedObjects.description
     }
     
-    var containerStorage = DIContainerStorage()
-    
-    public init() {
-        
-    }
-    
     @discardableResult
-    public func register<T>(as type: T.Type = T.self, _ initialize: @escaping (DIContainer) -> T) -> DIContainerContext<T> {
+    public func register<T>(as type: T.Type = T.self, _ initialize: @escaping (DIContainer) -> T) -> DIContainerBuilder<T> {
         let initer = LazyObject(initBlock: initialize, container: self)
-        return DIContainerContext(container: self, object: DIObject(lazy: initer, type: type))
+        return DIContainerBuilder(container: self, object: DIObject(lazy: initer, type: type))
     }
     
     public func resolve<T>(bundle: Bundle? = nil) -> T {
@@ -42,20 +37,10 @@ public final class DIContainer: CustomStringConvertible {
     // MARK: - Private
     
     func resolveSingletones() {
-        let objects = containerStorage.objects.filter { $0.lifeCycle == .single }
+        let objects = containerStorage.objects.filter { $0.scope == .single }
         for object in objects {
             addSingletone(object)
         }
-    }
-    
-    @discardableResult
-    func registerObject(_ object: DIObject) -> DIContainerContext<Any> {
-        return DIContainerContext(container: self, object: object)
-    }
-    
-    func merge(with container: DIContainer) {
-        let newContainers = container.containerStorage.storedObjects
-        containerStorage.storedObjects.merge(newContainers) { _, new in new }
     }
     
 }
@@ -73,7 +58,7 @@ private extension DIContainer {
         let object = findObject(for: type, bundle: bundle)
         let key = ObjectIdentifier(object.type)
         
-        switch object.lifeCycle {
+        switch object.scope {
         case .single:
             return resolveStorage[key]
         case .prototype:
