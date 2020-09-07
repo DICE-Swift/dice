@@ -76,6 +76,7 @@ import DICE
 class ViewController: UIViewController {
     
     let container = DIContainer()
+    // In real case you'll need to pass container in ViewController or another class and all the dependencies should have been already registered prior to using container
     
     override func viewDidLoad() {
         super.viewDidLoad()
