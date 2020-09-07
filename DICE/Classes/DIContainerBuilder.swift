@@ -24,12 +24,4 @@ public class DIContainerBuilder<T> {
         return self
     }
     
-    @discardableResult
-    public func `as`<U>(_ type: U.Type) -> DIContainerBuilder<T> {
-        manager.insert(object, forType: type)
-        return self
-    }
-    
-    // TODO add 'name' or 'tag' here for property wrapper injections
-    
 }

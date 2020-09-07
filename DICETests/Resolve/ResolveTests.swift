@@ -16,7 +16,7 @@ class ResolveTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        container.register(as: InjectableServiceType.self) { _ in
+        container.register(InjectableServiceType.self) { _ in
             return InjectableService()
         }
         

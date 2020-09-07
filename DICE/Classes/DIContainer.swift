@@ -17,7 +17,7 @@ public final class DIContainer: CustomStringConvertible {
     }
     
     @discardableResult
-    public func register<T>(as type: T.Type = T.self, _ initialize: @escaping (DIContainer) -> T) -> DIContainerBuilder<T> {
+    public func register<T>(_ type: T.Type = T.self, _ initialize: @escaping (DIContainer) -> T) -> DIContainerBuilder<T> {
         let initer = LazyObject(initBlock: initialize, container: self)
         return DIContainerBuilder(container: self, object: DIObject(lazy: initer, type: type))
     }
@@ -39,7 +39,7 @@ public final class DIContainer: CustomStringConvertible {
     func resolveSingletones() {
         let objects = containerStorage.objects.filter { $0.scope == .single }
         for object in objects {
-            addSingletone(object)
+            addSingleton(object)
         }
     }
     
@@ -49,7 +49,7 @@ private extension DIContainer {
     
     /// Adds singletone instance to the storage making it accessible
     /// - Parameter object: Object to store in storage
-    func addSingletone(_ object: DIObject) {
+    func addSingleton(_ object: DIObject) {
         let resolvedObject = object.lazy.resolve() as Any
         resolveStorage[ObjectIdentifier(object.type)] = resolvedObject
     }

@@ -16,14 +16,13 @@ class InjectedTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        container.register(as: InternalServiceType.self) { _ in
+        container.register(InternalServiceType.self) { _ in
             return InternalService()
         }
         
-        container.register(as: InjectableServiceType.self) { container in
+        container.register(InjectableServiceType.self) { container in
             let service: InternalServiceType = container.resolve()
             service.test()
-            Swift.print("Container: \(container.description)")
             return InjectableService()
         }
         
