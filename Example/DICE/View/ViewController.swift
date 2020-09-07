@@ -11,13 +11,15 @@ import DICE
 
 class ViewController: UIViewController {
     
-    @Inject var dummyService: DummyServiceType
+    @Injected var dummyService: DummyServiceType
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let result = dummyService.test()
         Swift.print(result)
+        
+        dummyService.printInternal()
     }
     
 }

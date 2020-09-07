@@ -10,18 +10,25 @@ import Foundation
 
 protocol DummyServiceType {
     func test() -> String
+    func printInternal()
 }
 
 class DummyService: DummyServiceType {
     
-    private let result: String
+    private let dummyInternalDependency: DummyInternalDependencyType
+    private let res: String
     
-    init(result: String) {
-        self.result = result
+    init(res: String, dummyInternalDependency: DummyInternalDependencyType) {
+        self.res = res
+        self.dummyInternalDependency = dummyInternalDependency
     }
     
     func test() -> String {
-        return result
+        return res
+    }
+    
+    func printInternal() {
+        Swift.print(dummyInternalDependency.test())
     }
     
 }

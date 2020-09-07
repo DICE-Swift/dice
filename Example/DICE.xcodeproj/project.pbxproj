@@ -16,6 +16,7 @@
 		CB6EE3AB24A8F16B00B28F09 /* DICE_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE3AA24A8F16B00B28F09 /* DICE_ExampleTests.swift */; };
 		CB83072424B1F8B7005AA6F9 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83072324B1F8B7005AA6F9 /* Session.swift */; };
 		CB83072B24B1FD4F005AA6F9 /* DummyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83072A24B1FD4F005AA6F9 /* DummyService.swift */; };
+		CBC79BCD2505873200DA8BE0 /* DummyInternalDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BCC2505873200DA8BE0 /* DummyInternalDependency.swift */; };
 		E8E505ADA7CAB843DA2EB605 /* Pods_DICE_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3992EBDC8E78197B6036A9B /* Pods_DICE_ExampleTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		CB6EE3AC24A8F16B00B28F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB83072324B1F8B7005AA6F9 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		CB83072A24B1FD4F005AA6F9 /* DummyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyService.swift; sourceTree = "<group>"; };
+		CBC79BCC2505873200DA8BE0 /* DummyInternalDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyInternalDependency.swift; sourceTree = "<group>"; };
 		E42C73A4873F17C8565EF11E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E805B474F72E6DB970390D04 /* DICE.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DICE.podspec; path = ../DICE.podspec; sourceTree = "<group>"; };
 		F65735F1A5B1D7A797D35C1E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				CB83072A24B1FD4F005AA6F9 /* DummyService.swift */,
+				CBC79BCC2505873200DA8BE0 /* DummyInternalDependency.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				CB83072B24B1FD4F005AA6F9 /* DummyService.swift in Sources */,
+				CBC79BCD2505873200DA8BE0 /* DummyInternalDependency.swift in Sources */,
 				CB83072424B1F8B7005AA6F9 /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

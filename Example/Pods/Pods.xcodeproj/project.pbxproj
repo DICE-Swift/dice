@@ -8,15 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		14BB0D905720FA859FD9244BEEC1632D /* Pods-DICE_ExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4862F1A96A25C0516D7BD6E6C30C8228 /* Pods-DICE_ExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24C5C0F4EFF945CFB8DF4F1DEA48EFBD /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2251603AA1459A1081817BB18B8502DF /* Dependencies.swift */; };
 		468B03AA3BC8E8205B96D62E3CA28DA5 /* Pods-DICE_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7FC624610B0E690043A2A26A0120E9A /* Pods-DICE_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B3FBDFCFBF370406AA590FC475C5641 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		6E7B012063D31A09D008C2AF2345A209 /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722907A289CEB2CC52842A0FCA2099D /* Inject.swift */; };
+		6E7B012063D31A09D008C2AF2345A209 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722907A289CEB2CC52842A0FCA2099D /* Injected.swift */; };
 		953AD57B0833A5E07B8ACBBEBEA61E62 /* FactoryClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2D83B767BA8ADB85F0FCAF2EEE405 /* FactoryClosure.swift */; };
 		A66EC0D2E12E8B6B06CD9065CAADBEB6 /* DICE-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7B0D6F4677E28E5529837C5FBF3ABD /* DICE-dummy.m */; };
 		A83CED0165066B1C4310A41C22E256FC /* Pods-DICE_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F268102762B28B1094F0DE9B30BE504 /* Pods-DICE_Example-dummy.m */; };
 		AB92FEDC65DB921D90E5CC4F9B8DB191 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		B78214AB01498BEAF20AC195F6C55199 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		CBC79BDA2506580300DA8BE0 /* InjectableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BCE2506580100DA8BE0 /* InjectableProperty.swift */; };
+		CBC79BDC2506580300DA8BE0 /* DIObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BD02506580200DA8BE0 /* DIObject.swift */; };
+		CBC79BDD2506580300DA8BE0 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BD12506580200DA8BE0 /* DIContainer.swift */; };
+		CBC79BDE2506580300DA8BE0 /* DIContainerContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BD22506580200DA8BE0 /* DIContainerContext.swift */; };
+		CBC79BE02506580300DA8BE0 /* DICE.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BD42506580300DA8BE0 /* DICE.swift */; };
+		CBC79BE12506580300DA8BE0 /* LazyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BD52506580300DA8BE0 /* LazyObject.swift */; };
+		CBC79BE32506580300DA8BE0 /* WeakObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BD72506580300DA8BE0 /* WeakObject.swift */; };
+		CBC79BE42506580300DA8BE0 /* DIContainerStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BD82506580300DA8BE0 /* DIContainerStorage.swift */; };
+		CBC79BE52506580300DA8BE0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BD92506580300DA8BE0 /* Extensions.swift */; };
 		D9CAA0576478403BF3CE45EE9B5F7320 /* DICE-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E620DBAB9BD3CEDBF321631F59B19D27 /* DICE-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F468C42944932C934960B5E4D1A00E65 /* Pods-DICE_ExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C503B263FE7108F626C218DA3608DCB /* Pods-DICE_ExampleTests-dummy.m */; };
 /* End PBXBuildFile section */
@@ -40,16 +48,15 @@
 
 /* Begin PBXFileReference section */
 		0F88497C6B29B28B8B7B7FDF749B1F06 /* Pods-DICE_ExampleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DICE_ExampleTests-Info.plist"; sourceTree = "<group>"; };
-		1CEE2B40DAA3F881776A84F4DFBAA648 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		2251603AA1459A1081817BB18B8502DF /* Dependencies.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dependencies.swift; path = DICE/Classes/Dependencies.swift; sourceTree = "<group>"; };
+		1CEE2B40DAA3F881776A84F4DFBAA648 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2AF26C677D427A040191C24179BC96D7 /* Pods-DICE_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DICE_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3D62B4CC251B96A8979670D85592E464 /* Pods-DICE_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DICE_Example.modulemap"; sourceTree = "<group>"; };
 		43AD922E999B98F0B705535B5B6F3013 /* Pods-DICE_ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DICE_ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		44A2D83B767BA8ADB85F0FCAF2EEE405 /* FactoryClosure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FactoryClosure.swift; path = DICE/Classes/FactoryClosure.swift; sourceTree = "<group>"; };
-		477582F9B8B806CB9BC31985BDC2F200 /* Pods_DICE_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DICE_ExampleTests.framework; path = "Pods-DICE_ExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		477582F9B8B806CB9BC31985BDC2F200 /* Pods_DICE_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DICE_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4862F1A96A25C0516D7BD6E6C30C8228 /* Pods-DICE_ExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DICE_ExampleTests-umbrella.h"; sourceTree = "<group>"; };
-		5722907A289CEB2CC52842A0FCA2099D /* Inject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Inject.swift; path = DICE/Classes/Inject.swift; sourceTree = "<group>"; };
+		5722907A289CEB2CC52842A0FCA2099D /* Injected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Injected.swift; path = DICE/Classes/Injected.swift; sourceTree = "<group>"; };
 		5C503B263FE7108F626C218DA3608DCB /* Pods-DICE_ExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DICE_ExampleTests-dummy.m"; sourceTree = "<group>"; };
 		5CDE929CDF98E749098B0CA039E54D84 /* Pods-DICE_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DICE_Example-Info.plist"; sourceTree = "<group>"; };
 		6BD13B995646920D1B7471B1D9898195 /* Pods-DICE_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DICE_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,22 +64,31 @@
 		75F98759698FE871762FA3BA6DED9D47 /* DICE-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DICE-Info.plist"; sourceTree = "<group>"; };
 		8E7B0D6F4677E28E5529837C5FBF3ABD /* DICE-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DICE-dummy.m"; sourceTree = "<group>"; };
 		9A66701E40084823FC2D3FF9DBC29DF6 /* Pods-DICE_ExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DICE_ExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F9FD18096AE1FFEBB24893F8ADA0D3C /* DICE.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DICE.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F9FD18096AE1FFEBB24893F8ADA0D3C /* DICE.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DICE.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A12DB1DC039A216D5762E7FA1EE2D22A /* DICE.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DICE.xcconfig; sourceTree = "<group>"; };
 		B5681F583C92956D544F42EAEDE82400 /* Pods-DICE_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DICE_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B599D48B9ADE68410FD009A90CF18BC7 /* Pods-DICE_ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DICE_ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B75C8497084C2F09F57500BFC1879102 /* Pods_DICE_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DICE_Example.framework; path = "Pods-DICE_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75C8497084C2F09F57500BFC1879102 /* Pods_DICE_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DICE_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC6DDD5037B9139A468FFABC2AC2C9A /* DICE-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DICE-prefix.pch"; sourceTree = "<group>"; };
 		BB1B7B9F5B214F18C9E24E31E89B0D85 /* Pods-DICE_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DICE_Example-frameworks.sh"; sourceTree = "<group>"; };
 		BB87974B18A48437F06C6542F0B614E3 /* Pods-DICE_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DICE_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C5B43DE049DF10E7F9772BA68BE6D9AF /* Pods-DICE_ExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DICE_ExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CED165BFB0F5550C8B0B1B3A5C09BEF3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		CBC79BCE2506580100DA8BE0 /* InjectableProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InjectableProperty.swift; path = DICE/Classes/InjectableProperty.swift; sourceTree = "<group>"; };
+		CBC79BD02506580200DA8BE0 /* DIObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DIObject.swift; path = DICE/Classes/DIObject.swift; sourceTree = "<group>"; };
+		CBC79BD12506580200DA8BE0 /* DIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DIContainer.swift; path = DICE/Classes/DIContainer.swift; sourceTree = "<group>"; };
+		CBC79BD22506580200DA8BE0 /* DIContainerContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DIContainerContext.swift; path = DICE/Classes/DIContainerContext.swift; sourceTree = "<group>"; };
+		CBC79BD42506580300DA8BE0 /* DICE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DICE.swift; path = DICE/Classes/DICE.swift; sourceTree = "<group>"; };
+		CBC79BD52506580300DA8BE0 /* LazyObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LazyObject.swift; path = DICE/Classes/LazyObject.swift; sourceTree = "<group>"; };
+		CBC79BD72506580300DA8BE0 /* WeakObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeakObject.swift; path = DICE/Classes/WeakObject.swift; sourceTree = "<group>"; };
+		CBC79BD82506580300DA8BE0 /* DIContainerStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DIContainerStorage.swift; path = DICE/Classes/DIContainerStorage.swift; sourceTree = "<group>"; };
+		CBC79BD92506580300DA8BE0 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = DICE/Classes/Extensions.swift; sourceTree = "<group>"; };
+		CED165BFB0F5550C8B0B1B3A5C09BEF3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DC4405BC4613C279CC543E53C2ABBD11 /* DICE.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DICE.modulemap; sourceTree = "<group>"; };
 		E620DBAB9BD3CEDBF321631F59B19D27 /* DICE-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DICE-umbrella.h"; sourceTree = "<group>"; };
 		E7460E41D3A944D7725132D9A00E55B7 /* Pods-DICE_ExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DICE_ExampleTests.modulemap"; sourceTree = "<group>"; };
 		E7FC624610B0E690043A2A26A0120E9A /* Pods-DICE_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DICE_Example-umbrella.h"; sourceTree = "<group>"; };
-		EB3A19E0AD0C1B728490040EA7E06EB9 /* DICE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DICE.framework; path = DICE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3A19E0AD0C1B728490040EA7E06EB9 /* DICE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DICE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,9 +224,17 @@
 		E27C0116BFBCD9F43779B2F46639FE33 /* DICE */ = {
 			isa = PBXGroup;
 			children = (
-				2251603AA1459A1081817BB18B8502DF /* Dependencies.swift */,
+				CBC79BD42506580300DA8BE0 /* DICE.swift */,
+				CBC79BD12506580200DA8BE0 /* DIContainer.swift */,
+				CBC79BD22506580200DA8BE0 /* DIContainerContext.swift */,
+				CBC79BD82506580300DA8BE0 /* DIContainerStorage.swift */,
+				CBC79BD02506580200DA8BE0 /* DIObject.swift */,
+				CBC79BD92506580300DA8BE0 /* Extensions.swift */,
+				CBC79BCE2506580100DA8BE0 /* InjectableProperty.swift */,
+				CBC79BD52506580300DA8BE0 /* LazyObject.swift */,
+				CBC79BD72506580300DA8BE0 /* WeakObject.swift */,
+				5722907A289CEB2CC52842A0FCA2099D /* Injected.swift */,
 				44A2D83B767BA8ADB85F0FCAF2EEE405 /* FactoryClosure.swift */,
-				5722907A289CEB2CC52842A0FCA2099D /* Inject.swift */,
 				9FC35791725C8BA6D193483DE883D500 /* Pod */,
 				03EBC07D6CE61108F2340F93C2C025C6 /* Support Files */,
 			);
@@ -387,10 +411,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24C5C0F4EFF945CFB8DF4F1DEA48EFBD /* Dependencies.swift in Sources */,
 				A66EC0D2E12E8B6B06CD9065CAADBEB6 /* DICE-dummy.m in Sources */,
+				CBC79BE02506580300DA8BE0 /* DICE.swift in Sources */,
 				953AD57B0833A5E07B8ACBBEBEA61E62 /* FactoryClosure.swift in Sources */,
-				6E7B012063D31A09D008C2AF2345A209 /* Inject.swift in Sources */,
+				CBC79BE42506580300DA8BE0 /* DIContainerStorage.swift in Sources */,
+				6E7B012063D31A09D008C2AF2345A209 /* Injected.swift in Sources */,
+				CBC79BE32506580300DA8BE0 /* WeakObject.swift in Sources */,
+				CBC79BDC2506580300DA8BE0 /* DIObject.swift in Sources */,
+				CBC79BDE2506580300DA8BE0 /* DIContainerContext.swift in Sources */,
+				CBC79BDA2506580300DA8BE0 /* InjectableProperty.swift in Sources */,
+				CBC79BDD2506580300DA8BE0 /* DIContainer.swift in Sources */,
+				CBC79BE52506580300DA8BE0 /* Extensions.swift in Sources */,
+				CBC79BE12506580300DA8BE0 /* LazyObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,8 +594,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

@@ -17,7 +17,7 @@ protocol InjectableServiceType {
 class InjectableService: InjectableServiceType {
     
     func test() {
-        
+        Swift.print("InjectableService")
     }
     
 }

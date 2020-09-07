@@ -13,10 +13,26 @@ protocol SessionType {}
 
 class Session: SessionType {
     
+    let container = DIContainer()
+    
     init() {
-        Dependencies.shared.register(type: DummyServiceType.self) { _ in
-            return DummyService(result: "123")
-        }
+        let internalDependency = DummyInternalDependency(value: 100)
+        
+        container.register(as: DummyServiceType.self, {
+            return DummyService(res: "123", dummyInternalDependency: internalDependency)
+        })
+        
+        container.register({
+            return UIView()
+        })
+        
+        DICE.Defaults.lifeCycle = .single
+        DICE.use(container)
+        
+        Swift.print(container.description)
+        
+        let resolvedService: DummyServiceType = container.resolve()
+        Swift.print("Resolved service test: \(resolvedService.test())")
     }
     
 }

@@ -8,12 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		CB6EE38B24A8EF1900B28F09 /* DICE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6EE38124A8EF1900B28F09 /* DICE.framework */; };
-		CB6EE39024A8EF1900B28F09 /* InjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE38F24A8EF1900B28F09 /* InjectTests.swift */; };
+		CB6EE39024A8EF1900B28F09 /* InjectedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE38F24A8EF1900B28F09 /* InjectedTests.swift */; };
 		CB6EE39224A8EF1900B28F09 /* DICE.h in Headers */ = {isa = PBXBuildFile; fileRef = CB6EE38424A8EF1900B28F09 /* DICE.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB6EE39C24A8F01D00B28F09 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE39B24A8F01D00B28F09 /* Dependencies.swift */; };
-		CB6EE39E24A8F04300B28F09 /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE39D24A8F04300B28F09 /* Inject.swift */; };
 		CB6EE3A324A8F11000B28F09 /* InjectableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE3A224A8F11000B28F09 /* InjectableService.swift */; };
 		CB83072D24B226AA005AA6F9 /* FactoryClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83072C24B226AA005AA6F9 /* FactoryClosure.swift */; };
+		CBC79BF42506585000DA8BE0 /* NSRecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BE72506584F00DA8BE0 /* NSRecursiveLock.swift */; };
+		CBC79BF52506585000DA8BE0 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BE82506584F00DA8BE0 /* Injected.swift */; };
+		CBC79BF62506585000DA8BE0 /* DIObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BE92506585000DA8BE0 /* DIObject.swift */; };
+		CBC79BF82506585000DA8BE0 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BEB2506585000DA8BE0 /* DIContainer.swift */; };
+		CBC79BF92506585000DA8BE0 /* DIContainerContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BEC2506585000DA8BE0 /* DIContainerContext.swift */; };
+		CBC79BFA2506585000DA8BE0 /* DICE.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BED2506585000DA8BE0 /* DICE.swift */; };
+		CBC79BFB2506585000DA8BE0 /* DIContainerStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BEE2506585000DA8BE0 /* DIContainerStorage.swift */; };
+		CBC79BFC2506585000DA8BE0 /* LazyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BEF2506585000DA8BE0 /* LazyObject.swift */; };
+		CBC79BFD2506585000DA8BE0 /* InjectableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BF02506585000DA8BE0 /* InjectableProperty.swift */; };
+		CBC79BFE2506585000DA8BE0 /* WeakObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BF12506585000DA8BE0 /* WeakObject.swift */; };
+		CBC79C042506632300DA8BE0 /* ResolveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C032506632300DA8BE0 /* ResolveTests.swift */; };
+		CBC79C08250667AA00DA8BE0 /* EnvironmentInjected.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C07250667AA00DA8BE0 /* EnvironmentInjected.swift */; };
+		CBC79C0A250667CB00DA8BE0 /* EnvironmentObservableInjected.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C09250667CB00DA8BE0 /* EnvironmentObservableInjected.swift */; };
+		CBC79C0D250668FF00DA8BE0 /* DIContainerEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C0C250668FF00DA8BE0 /* DIContainerEnvironmentKey.swift */; };
+		CBC79C0F2506698800DA8BE0 /* DICE+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C0E2506698800DA8BE0 /* DICE+SwiftUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +44,25 @@
 		CB6EE38424A8EF1900B28F09 /* DICE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DICE.h; sourceTree = "<group>"; };
 		CB6EE38524A8EF1900B28F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB6EE38A24A8EF1900B28F09 /* DICETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DICETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB6EE38F24A8EF1900B28F09 /* InjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectTests.swift; sourceTree = "<group>"; };
+		CB6EE38F24A8EF1900B28F09 /* InjectedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedTests.swift; sourceTree = "<group>"; };
 		CB6EE39124A8EF1900B28F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB6EE39B24A8F01D00B28F09 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
-		CB6EE39D24A8F04300B28F09 /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
 		CB6EE3A224A8F11000B28F09 /* InjectableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableService.swift; sourceTree = "<group>"; };
 		CB83072C24B226AA005AA6F9 /* FactoryClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryClosure.swift; sourceTree = "<group>"; };
+		CBC79BE72506584F00DA8BE0 /* NSRecursiveLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSRecursiveLock.swift; sourceTree = "<group>"; };
+		CBC79BE82506584F00DA8BE0 /* Injected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
+		CBC79BE92506585000DA8BE0 /* DIObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIObject.swift; sourceTree = "<group>"; };
+		CBC79BEB2506585000DA8BE0 /* DIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		CBC79BEC2506585000DA8BE0 /* DIContainerContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainerContext.swift; sourceTree = "<group>"; };
+		CBC79BED2506585000DA8BE0 /* DICE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DICE.swift; sourceTree = "<group>"; };
+		CBC79BEE2506585000DA8BE0 /* DIContainerStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainerStorage.swift; sourceTree = "<group>"; };
+		CBC79BEF2506585000DA8BE0 /* LazyObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyObject.swift; sourceTree = "<group>"; };
+		CBC79BF02506585000DA8BE0 /* InjectableProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InjectableProperty.swift; sourceTree = "<group>"; };
+		CBC79BF12506585000DA8BE0 /* WeakObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakObject.swift; sourceTree = "<group>"; };
+		CBC79C032506632300DA8BE0 /* ResolveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolveTests.swift; sourceTree = "<group>"; };
+		CBC79C07250667AA00DA8BE0 /* EnvironmentInjected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentInjected.swift; sourceTree = "<group>"; };
+		CBC79C09250667CB00DA8BE0 /* EnvironmentObservableInjected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObservableInjected.swift; sourceTree = "<group>"; };
+		CBC79C0C250668FF00DA8BE0 /* DIContainerEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerEnvironmentKey.swift; sourceTree = "<group>"; };
+		CBC79C0E2506698800DA8BE0 /* DICE+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DICE+SwiftUI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				CB6EE3A024A8F0FD00B28F09 /* Doubles */,
-				CB6EE3A124A8F10100B28F09 /* Inject */,
+				CB6EE3A124A8F10100B28F09 /* Injected */,
+				CBC79C022506631700DA8BE0 /* Resolve */,
 				CB6EE39124A8EF1900B28F09 /* Info.plist */,
 			);
 			path = DICETests;
@@ -99,8 +126,17 @@
 		CB6EE39F24A8F05C00B28F09 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CB6EE39B24A8F01D00B28F09 /* Dependencies.swift */,
-				CB6EE39D24A8F04300B28F09 /* Inject.swift */,
+				CBC79C062506678F00DA8BE0 /* PropertyWrapper */,
+				CBC79C0B250668E500DA8BE0 /* SwiftUI */,
+				CBC79C052506671F00DA8BE0 /* Extensions */,
+				CBC79BED2506585000DA8BE0 /* DICE.swift */,
+				CBC79BEB2506585000DA8BE0 /* DIContainer.swift */,
+				CBC79BEC2506585000DA8BE0 /* DIContainerContext.swift */,
+				CBC79BEE2506585000DA8BE0 /* DIContainerStorage.swift */,
+				CBC79BE92506585000DA8BE0 /* DIObject.swift */,
+				CBC79BF02506585000DA8BE0 /* InjectableProperty.swift */,
+				CBC79BEF2506585000DA8BE0 /* LazyObject.swift */,
+				CBC79BF12506585000DA8BE0 /* WeakObject.swift */,
 				CB83072C24B226AA005AA6F9 /* FactoryClosure.swift */,
 			);
 			path = Classes;
@@ -114,12 +150,47 @@
 			path = Doubles;
 			sourceTree = "<group>";
 		};
-		CB6EE3A124A8F10100B28F09 /* Inject */ = {
+		CB6EE3A124A8F10100B28F09 /* Injected */ = {
 			isa = PBXGroup;
 			children = (
-				CB6EE38F24A8EF1900B28F09 /* InjectTests.swift */,
+				CB6EE38F24A8EF1900B28F09 /* InjectedTests.swift */,
 			);
-			path = Inject;
+			path = Injected;
+			sourceTree = "<group>";
+		};
+		CBC79C022506631700DA8BE0 /* Resolve */ = {
+			isa = PBXGroup;
+			children = (
+				CBC79C032506632300DA8BE0 /* ResolveTests.swift */,
+			);
+			path = Resolve;
+			sourceTree = "<group>";
+		};
+		CBC79C052506671F00DA8BE0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CBC79BE72506584F00DA8BE0 /* NSRecursiveLock.swift */,
+				CBC79C0E2506698800DA8BE0 /* DICE+SwiftUI.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CBC79C062506678F00DA8BE0 /* PropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				CBC79BE82506584F00DA8BE0 /* Injected.swift */,
+				CBC79C07250667AA00DA8BE0 /* EnvironmentInjected.swift */,
+				CBC79C09250667CB00DA8BE0 /* EnvironmentObservableInjected.swift */,
+			);
+			path = PropertyWrapper;
+			sourceTree = "<group>";
+		};
+		CBC79C0B250668E500DA8BE0 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				CBC79C0C250668FF00DA8BE0 /* DIContainerEnvironmentKey.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +303,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBC79BF42506585000DA8BE0 /* NSRecursiveLock.swift in Sources */,
+				CBC79BFC2506585000DA8BE0 /* LazyObject.swift in Sources */,
+				CBC79BFA2506585000DA8BE0 /* DICE.swift in Sources */,
+				CBC79BFD2506585000DA8BE0 /* InjectableProperty.swift in Sources */,
+				CBC79C0A250667CB00DA8BE0 /* EnvironmentObservableInjected.swift in Sources */,
 				CB83072D24B226AA005AA6F9 /* FactoryClosure.swift in Sources */,
-				CB6EE39E24A8F04300B28F09 /* Inject.swift in Sources */,
-				CB6EE39C24A8F01D00B28F09 /* Dependencies.swift in Sources */,
+				CBC79BF92506585000DA8BE0 /* DIContainerContext.swift in Sources */,
+				CBC79BFB2506585000DA8BE0 /* DIContainerStorage.swift in Sources */,
+				CBC79BFE2506585000DA8BE0 /* WeakObject.swift in Sources */,
+				CBC79BF52506585000DA8BE0 /* Injected.swift in Sources */,
+				CBC79C0D250668FF00DA8BE0 /* DIContainerEnvironmentKey.swift in Sources */,
+				CBC79C0F2506698800DA8BE0 /* DICE+SwiftUI.swift in Sources */,
+				CBC79BF82506585000DA8BE0 /* DIContainer.swift in Sources */,
+				CBC79BF62506585000DA8BE0 /* DIObject.swift in Sources */,
+				CBC79C08250667AA00DA8BE0 /* EnvironmentInjected.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,8 +325,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBC79C042506632300DA8BE0 /* ResolveTests.swift in Sources */,
 				CB6EE3A324A8F11000B28F09 /* InjectableService.swift in Sources */,
-				CB6EE39024A8EF1900B28F09 /* InjectTests.swift in Sources */,
+				CB6EE39024A8EF1900B28F09 /* InjectedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
