@@ -19,6 +19,10 @@ public final class DIContainer: CustomStringConvertible {
         return containerStorage.storedObjects.description
     }
     
+    public init() {
+        
+    }
+    
     @discardableResult
     public func register<T>(_ type: T.Type = T.self, _ initialize: @escaping (DIContainer) -> T) -> DIContainerBuilder<T> {
         let initer = LazyObject(initBlock: initialize, container: self)

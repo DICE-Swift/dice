@@ -18,15 +18,15 @@ class Session: SessionType {
     init() {
         let internalDependency = DummyInternalDependency(value: 100)
         
-        container.register(as: DummyServiceType.self, {
+        container.register(DummyServiceType.self) { _ in
             return DummyService(res: "123", dummyInternalDependency: internalDependency)
-        })
+        }
         
-        container.register({
+        container.register() { _ in
             return UIView()
-        })
+        }
         
-        DICE.Defaults.lifeCycle = .single
+        DICE.Defaults.scope = .objectGraph
         DICE.use(container)
         
         Swift.print(container.description)
