@@ -1,0 +1,9 @@
+use_frameworks!
+
+target 'SwiftUIExample' do
+  pod 'DICE', :path => '../'
+
+  target 'SwiftUIExampleTests' do
+    inherit! :search_paths
+  end
+end
