@@ -133,7 +133,17 @@ struct ContentView: View {
     var body: some View {
         HStack {
             Text(viewModel.title)
-        .onAppear { self.viewModel.startUpdatingTitle() }
+        }.onAppear { self.viewModel.startUpdatingTitle() }
+    }
+}
+
+...
+
+class ContentViewModel: ObservableObject {
+    @Published private(set) var title: String = ""
+    
+    func startUpdatingTitle() {
+        self.title = "Test"
     }
 }
 ```
@@ -153,6 +163,7 @@ struct ContentView: View {
         }.onAppear { self.service.auth() }
     }
 }
+
 ```
 
 ## Advanced usage
