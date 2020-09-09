@@ -261,13 +261,13 @@ Let's say we want to inject `InternalService` with the type `InternalServiceType
 1. Resolve using `DIContainer.resolve()`
 
 ```swift
-let service1: InjectableServiceType = container.resolve(tag: "service1")
+let service: InternalServiceType = container.resolve(tag: "dependency1")
 ```
 
 2. Resolve using property wrappers
 
 ```swift
-@Injected("dependency1") var service: InjectableServiceType
+@Injected("dependency1") var service: InternalServiceType
 ```
 
 
