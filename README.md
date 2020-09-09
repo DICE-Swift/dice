@@ -201,7 +201,7 @@ Object will be instantiated only after first call.
 Dependency instance is lazily created one per object graph.
 Object will be instantiated only after first call.
 
-### How to set scope
+### Set scope
 
 You can specify scopy by using optional `scope` parameter when registering an object. If no scope passed then default scope `DIScope.Defaults.scope` is used.
 
@@ -240,6 +240,34 @@ container.register(InjectableServiceType.self) { container in
     let internalService: InternalServiceType = container.resolve()
     return InjectableService(internalService: internalService)
 }
+```
+
+## Tags
+
+When you registering dependencies you could assign a tag for an object. When you resolve dependencies either using `DIContainer.resolve()` or property wrappeprs `Injected`, `EnvironmentObservableInjected`, `EnvironmentInjected` use a tag to inject an object that matches the tag you passed.
+
+### Register dependency with a tag
+
+```swift
+container.register(InternalServiceType.self, tag: "dependency1") { _ in
+    return InternalService(test: "stringInternal")
+}
+```
+
+### Resolve dependency with a tag
+
+Let's say we want to inject `InternalService` with the type `InternalServiceType` and tag `dependency1`, as per our example above.
+
+1. Resolve using `DIContainer.resolve()`
+
+```swift
+let service1: InjectableServiceType = container.resolve(tag: "service1")
+```
+
+2. Resolve using property wrappers
+
+```swift
+@Injected("dependency1") var service: InjectableServiceType
 ```
 
 
