@@ -32,7 +32,7 @@ public struct Injected<Value> {
 
     public init(_ tag: String? = "") {
         let bundle = (Value.self as? AnyClass).flatMap { Bundle(for: $0) }
-        let lazy: LazyInject = { DICE.sharedContainer.resolve(bundle: bundle) }
+        let lazy: LazyInject = { DICE.sharedContainer.resolve(tag: tag, bundle: bundle) }
         self.lazy = lazy
         self.tag = tag
     }

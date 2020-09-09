@@ -43,7 +43,7 @@ extension DIContainer {
         let object = DIObject(lazy: initer, type: type, scope: scope, key: key)
         
         // Add singleton objects to instantiate objects right away before building to make it accessible right after injection and resolving nested dependencies
-        // Aslo avoids race condition reported in https://github.com/DICE-Swift/dice/issues/8
+        // Also avoids race condition reported in https://github.com/DICE-Swift/dice/issues/8
         if object.scope == .single {
             let resolvedObject = closure(self) as Any
             resolveStorage[key] = resolvedObject

@@ -16,12 +16,12 @@ class InjectedTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        container.register(InternalServiceType.self) { _ in
+        container.register(InternalServiceType.self, tag: "dependency1") { _ in
             return InternalService(test: "stringInternal")
         }
         
         container.register(InjectableServiceType.self) { container in
-            let service: InternalServiceType = container.resolve()
+            let service: InternalServiceType = container.resolve(tag: "dependency1")
             XCTAssertEqual(service.test, "stringInternal")
             return InjectableService()
         }
@@ -32,6 +32,7 @@ class InjectedTests: XCTestCase {
     func testInjectedServiceShouldBeInitializedAndAccessible() {
         let dummyClass = DummyClass()
         XCTAssertNoThrow(try dummyClass.verify())
+        XCTAssertNoThrow(try dummyClass.verify2())
     }
     
 }
@@ -39,9 +40,14 @@ class InjectedTests: XCTestCase {
 class DummyClass {
     
     @Injected var injectableService: InjectableServiceType
+    @Injected("dependency1") var internalService: InternalServiceType
     
     func verify() throws -> InjectableServiceType {
         return injectableService
+    }
+    
+    func verify2() throws -> InternalServiceType {
+        return internalService
     }
     
 }

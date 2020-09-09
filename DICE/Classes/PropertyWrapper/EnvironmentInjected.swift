@@ -22,7 +22,7 @@ public struct EnvironmentInjected<Value: AnyObject>: DynamicProperty {
     
     public init(_ tag: String? = "") {
         let bundle = Bundle(for: Value.self)
-        let resolvedValue = Environment(\.container).wrappedValue.resolve(bundle: bundle) as Value
+        let resolvedValue = Environment(\.container).wrappedValue.resolve(tag: tag, bundle: bundle) as Value
         self.wrappedValue = resolvedValue
         self.tag = tag
     }
