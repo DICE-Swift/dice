@@ -13,23 +13,28 @@ class InjectedTests: XCTestCase {
     
     let container = DIContainer()
     
-    override func setUp() {
-        super.setUp()
+    override func tearDown() {
+        super.tearDown()
         
+        DICE.use(DIContainer())
+    }
+    
+}
+
+extension InjectedTests {
+    
+    func testInjectedServiceShouldBeInitializedAndAccessible() {
         container.register(InternalServiceType.self, tag: "dependency1") { _ in
             return InternalService(test: "stringInternal")
         }
         
         container.register(InjectableServiceType.self) { container in
             let service: InternalServiceType = container.resolve(tag: "dependency1")
-            XCTAssertEqual(service.test, "stringInternal")
             return InjectableService()
         }
         
         DICE.use(container)
-    }
-    
-    func testInjectedServiceShouldBeInitializedAndAccessible() {
+        
         let dummyClass = DummyClass()
         XCTAssertNoThrow(try dummyClass.verify())
         XCTAssertNoThrow(try dummyClass.verify2())

@@ -17,7 +17,7 @@ class InjectableService: InjectableServiceType {
     var test: String?
     
     init(test: String? = nil) {
-        Swift.print("Init InjectableService")
+        Swift.print("Init InjectableService with test string: \(test ?? "nil")")
         self.test = test
     }
     
