@@ -18,8 +18,14 @@ public class DIContainerBuilder<T> {
         self.manager.insert(object, forType: T.self)
     }
     
+}
+
+// MARK: API
+
+public extension DIContainerBuilder {
+    
     @discardableResult
-    public func scope(_ scope: DIScope) -> DIContainerBuilder<T> {
+    func scope(_ scope: DIScope) -> DIContainerBuilder<T> {
         object.scope = scope
         return self
     }

@@ -15,6 +15,12 @@ class LazyObject {
         self.container = container
     }
     
+}
+
+// MARK: Public
+
+extension LazyObject {
+    
     func resolve<T>() -> T {
         return self.initBlock(container) as! T
     }

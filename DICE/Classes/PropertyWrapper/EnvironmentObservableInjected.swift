@@ -21,16 +21,17 @@ public struct EnvironmentObservableInjected<Value: ObservableObject>: DynamicPro
         _wrappedValue
     }
     
+    /// The binding value, as "unwrapped" by accessing `$foo` on a `@Binding` property.
+    public var projectedValue: ObservedObject<Value>.Wrapper {
+        return __wrappedValue.projectedValue
+    }
+    
     public init() {
         let bundle = Bundle(for: Value.self)
         let resolvedValue = Environment(\.container).wrappedValue.resolve(bundle: bundle) as Value
         self.__wrappedValue = ObservedObject<Value>(initialValue: resolvedValue)
     }
     
-    /// The binding value, as "unwrapped" by accessing `$foo` on a `@Binding` property.
-    public var projectedValue: ObservedObject<Value>.Wrapper {
-        return __wrappedValue.projectedValue
-    }
 }
 
 @available(iOS 13.0, *)

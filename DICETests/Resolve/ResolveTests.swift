@@ -23,6 +23,10 @@ class ResolveTests: XCTestCase {
         DICE.use(container)
     }
     
+}
+
+extension ResolveTests {
+    
     func testResolveServiceShouldResolveInstance() {
         let service: InjectableServiceType = container.resolve()
         service.test()
