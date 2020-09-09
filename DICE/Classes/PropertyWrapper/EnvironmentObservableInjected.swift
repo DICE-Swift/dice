@@ -16,6 +16,8 @@ import Combine
 @propertyWrapper
 public struct EnvironmentObservableInjected<Value: ObservableObject>: DynamicProperty {
     
+    private let tag: String?
+    
     @ObservedObject private var _wrappedValue: Value
     public var wrappedValue: Value {
         _wrappedValue
@@ -26,18 +28,19 @@ public struct EnvironmentObservableInjected<Value: ObservableObject>: DynamicPro
         return __wrappedValue.projectedValue
     }
     
-    public init() {
+    public init(_ tag: String?) {
         let bundle = Bundle(for: Value.self)
         let resolvedValue = Environment(\.container).wrappedValue.resolve(bundle: bundle) as Value
         self.__wrappedValue = ObservedObject<Value>(initialValue: resolvedValue)
+        self.tag = tag
     }
     
 }
 
 @available(iOS 13.0, *)
 extension EnvironmentObservableInjected: InjectableProperty {
-    var type: Any.Type {
-        return Value.self
+    var key: DependencyKey {
+        return DependencyKey(type: Value.self, tag: tag)
     }
 }
 

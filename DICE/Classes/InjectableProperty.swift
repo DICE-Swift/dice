@@ -8,12 +8,12 @@
 import Foundation
 
 protocol InjectableProperty {
-    var type: Any.Type { get }
+    var key: DependencyKey { get }
     var bundle: Bundle? { get }
 }
 
 extension InjectableProperty {
     var bundle: Bundle? {
-        return (type as? AnyClass).flatMap { Bundle(for: $0) }
+        return (key.type as? AnyClass).flatMap { Bundle(for: $0) }
     }
 }

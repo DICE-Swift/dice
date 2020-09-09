@@ -11,10 +11,10 @@ class DIContainerStorage {
     
     let locker = NSRecursiveLock()
     
-    lazy var storedObjects: [ObjectIdentifier: DIObject] = [:]
+    lazy var storedObjects: [DependencyKey: DIObject] = [:]
     
     func insert<T>(_ object: DIObject, forType type: T.Type) {
-        locker.sync { self.storedObjects[ObjectIdentifier(type)] = object }
+        locker.sync { self.storedObjects[object.key] = object }
     }
     
     var objects: [DIObject] {
@@ -25,8 +25,8 @@ class DIContainerStorage {
 
 extension DIContainerStorage {
     
-    subscript(_ type: Any.Type) -> DIObject? {
-        return locker.sync { self.storedObjects[ObjectIdentifier(type)] }
+    subscript(_ key: DependencyKey) -> DIObject? {
+        return locker.sync { self.storedObjects[key] }
     }
     
 }

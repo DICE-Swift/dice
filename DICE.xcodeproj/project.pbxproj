@@ -11,6 +11,7 @@
 		CB6EE39024A8EF1900B28F09 /* InjectedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE38F24A8EF1900B28F09 /* InjectedTests.swift */; };
 		CB6EE39224A8EF1900B28F09 /* DICE.h in Headers */ = {isa = PBXBuildFile; fileRef = CB6EE38424A8EF1900B28F09 /* DICE.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB6EE3A324A8F11000B28F09 /* InjectableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE3A224A8F11000B28F09 /* InjectableService.swift */; };
+		CB93C0552508FB1B00816584 /* DependencyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB93C0542508FB1B00816584 /* DependencyKey.swift */; };
 		CBC79BF42506585000DA8BE0 /* NSRecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BE72506584F00DA8BE0 /* NSRecursiveLock.swift */; };
 		CBC79BF52506585000DA8BE0 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BE82506584F00DA8BE0 /* Injected.swift */; };
 		CBC79BF62506585000DA8BE0 /* DIObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BE92506585000DA8BE0 /* DIObject.swift */; };
@@ -48,6 +49,7 @@
 		CB6EE38F24A8EF1900B28F09 /* InjectedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedTests.swift; sourceTree = "<group>"; };
 		CB6EE39124A8EF1900B28F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB6EE3A224A8F11000B28F09 /* InjectableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableService.swift; sourceTree = "<group>"; };
+		CB93C0542508FB1B00816584 /* DependencyKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyKey.swift; sourceTree = "<group>"; };
 		CBC79BE72506584F00DA8BE0 /* NSRecursiveLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSRecursiveLock.swift; sourceTree = "<group>"; };
 		CBC79BE82506584F00DA8BE0 /* Injected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
 		CBC79BE92506585000DA8BE0 /* DIObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIObject.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				CBC79BEF2506585000DA8BE0 /* LazyObject.swift */,
 				CBC79BF12506585000DA8BE0 /* WeakObject.swift */,
 				CBC79C132506ADAE00DA8BE0 /* DIScope.swift */,
+				CB93C0542508FB1B00816584 /* DependencyKey.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				CBC79C142506ADAE00DA8BE0 /* DIScope.swift in Sources */,
 				CBC79BFD2506585000DA8BE0 /* InjectableProperty.swift in Sources */,
 				CBC79C0A250667CB00DA8BE0 /* EnvironmentObservableInjected.swift in Sources */,
+				CB93C0552508FB1B00816584 /* DependencyKey.swift in Sources */,
 				CBC79BF92506585000DA8BE0 /* DIContainerBuilder.swift in Sources */,
 				CBC79BFB2506585000DA8BE0 /* DIContainerStorage.swift in Sources */,
 				CBC79BFE2506585000DA8BE0 /* WeakObject.swift in Sources */,

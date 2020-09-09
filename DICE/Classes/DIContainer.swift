@@ -9,10 +9,10 @@ import Foundation
 
 public final class DIContainer: CustomStringConvertible {
     
-    lazy var resolveStorage: [ObjectIdentifier: Any] = [:]
+    lazy var resolveStorage: [DependencyKey: Any] = [:]
     private(set) var containerStorage = DIContainerStorage()
     
-    lazy var resolveObjectGraphStorage: [ObjectIdentifier: Any] = [:]
+    lazy var resolveObjectGraphStorage: [DependencyKey: Any] = [:]
     var objectGraphStackDepth: Int = 0
     
     public var description: String {
@@ -30,25 +30,32 @@ public final class DIContainer: CustomStringConvertible {
 extension DIContainer {
     
     @discardableResult
-    public func register<T>(_ type: T.Type = T.self, scope: DIScope? = nil, _ closure: @escaping (DIContainer) -> T) -> DIContainerBuilder<T> {
+    public func register<T>(
+        _ type: T.Type = T.self,
+        tag: String? = "",
+        scope: DIScope? = nil,
+        _ closure: @escaping (DIContainer) -> T
+    ) -> DIContainerBuilder<T> {
         let scope = scope ?? DICE.Defaults.scope
         
         let initer = LazyObject(initBlock: closure, container: self)
-        let object = DIObject(lazy: initer, type: type, scope: scope)
+        let key = DependencyKey(type: type, tag: tag)
+        let object = DIObject(lazy: initer, type: type, scope: scope, key: key)
         
         // Add singleton objects to instantiate objects right away before building to make it accessible right after injection and resolving nested dependencies
         // Aslo avoids race condition reported in https://github.com/DICE-Swift/dice/issues/8
         if object.scope == .single {
             let resolvedObject = closure(self) as Any
-            resolveStorage[ObjectIdentifier(type)] = resolvedObject
+            resolveStorage[key] = resolvedObject
             return DIContainerBuilder(container: self, object: object)
         }
         
         return DIContainerBuilder(container: self, object: object)
     }
     
-    public func resolve<T>(bundle: Bundle? = nil) -> T {
-        if let object = makeObject(for: T.self, bundle: bundle) {
+    public func resolve<T>(tag: String? = "", bundle: Bundle? = nil) -> T {
+        let key = DependencyKey(type: T.self, tag: tag)
+        if let object = makeObject(for: key, bundle: bundle) {
             return object as! T
         } else {
             fatalError("Couldn't found object for type \(T.self)")
@@ -61,9 +68,8 @@ extension DIContainer {
 
 private extension DIContainer {
     
-    func makeObject(for type: Any.Type, bundle: Bundle?, usingObject: DIObject? = nil) -> Any? {
-        let object = usingObject ?? findObject(for: type, bundle: bundle)
-        let key = ObjectIdentifier(object.type)
+    func makeObject(for key: DependencyKey, bundle: Bundle?, usingObject: DIObject? = nil) -> Any? {
+        let object = usingObject ?? findObject(for: key, bundle: bundle)
         
         switch object.scope {
         case .single:
@@ -97,10 +103,10 @@ private extension DIContainer {
             
             for child in mirror.children {
                 if let injectable = child.value as? InjectableProperty {
-                    let subject = findObject(for: injectable.type, bundle: injectable.bundle)
+                    let subject = findObject(for: injectable.key, bundle: injectable.bundle)
                     if subject.scope != .single && subject.scope != .weak {
                         objectGraphStackDepth += 1
-                        resolveObjectGraphStorage[ObjectIdentifier(subject.type)] = self.makeObject(for: subject.type, bundle: subject.bundle, usingObject: subject)
+                        resolveObjectGraphStorage[subject.key] = self.makeObject(for: subject.key, bundle: subject.bundle, usingObject: subject)
                     }
                 }
             }
@@ -109,9 +115,9 @@ private extension DIContainer {
         }
     }
     
-    func findObject(for type: Any.Type, bundle: Bundle?) -> DIObject {
-        guard let object = containerStorage[type] else {
-            fatalError("Can't found object for type \(type)")
+    func findObject(for key: DependencyKey, bundle: Bundle?) -> DIObject {
+        guard let object = containerStorage[key] else {
+            fatalError("Can't found object for key \(key)")
         }
         
         if let bundle = bundle {

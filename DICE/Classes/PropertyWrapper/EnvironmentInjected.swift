@@ -16,19 +16,22 @@ import Combine
 @propertyWrapper
 public struct EnvironmentInjected<Value: AnyObject>: DynamicProperty {
     
+    private let tag: String?
+    
     public let wrappedValue: Value
     
-    public init() {
+    public init(_ tag: String? = "") {
         let bundle = Bundle(for: Value.self)
         let resolvedValue = Environment(\.container).wrappedValue.resolve(bundle: bundle) as Value
         self.wrappedValue = resolvedValue
+        self.tag = tag
     }
 }
 
 @available(iOS 13.0, *)
 extension EnvironmentInjected: InjectableProperty {
-    var type: Any.Type {
-        return Value.self
+    var key: DependencyKey {
+        return DependencyKey(type: Value.self, tag: tag)
     }
 }
 

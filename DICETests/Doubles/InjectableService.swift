@@ -9,19 +9,16 @@
 import Foundation
 
 protocol InjectableServiceType {
-    
-    func test()
-    
+    var test: String? { get set }
 }
 
 class InjectableService: InjectableServiceType {
     
-    init() {
-        Swift.print("Init InjectableService")
-    }
+    var test: String?
     
-    func test() {
-        Swift.print("InjectableService test()")
+    init(test: String? = nil) {
+        Swift.print("Init InjectableService")
+        self.test = test
     }
     
 }

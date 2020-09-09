@@ -9,19 +9,16 @@
 import Foundation
 
 protocol InternalServiceType {
-    
-    func test()
-    
+    var test: String? { get set }
 }
 
 class InternalService: InternalServiceType {
     
-    init() {
-        Swift.print("Init InternalService")
-    }
+    var test: String?
     
-    func test() {
-        Swift.print("InternalService")
+    init(test: String? = nil) {
+        Swift.print("Init InternalService")
+        self.test = test
     }
     
 }

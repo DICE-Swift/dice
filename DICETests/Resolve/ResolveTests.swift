@@ -16,8 +16,12 @@ class ResolveTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        container.register(InjectableServiceType.self, scope: .single) { _ in
-            return InjectableService()
+        container.register(InjectableServiceType.self, tag: "s1", scope: .single) { _ in
+            return InjectableService(test: "s1")
+        }
+        
+        container.register(InjectableServiceType.self, tag: "s2", scope: .single) { _ in
+            return InjectableService(test: "s2")
         }
         
         DICE.use(container)
@@ -28,8 +32,11 @@ class ResolveTests: XCTestCase {
 extension ResolveTests {
     
     func testResolveServiceShouldResolveInstance() {
-        let service: InjectableServiceType = container.resolve()
-        service.test()
+        let service1: InjectableServiceType = container.resolve(tag: "s1")
+        XCTAssertEqual(service1.test, "s1")
+        
+        let service2: InjectableServiceType = container.resolve(tag: "s2")
+        XCTAssertEqual(service2.test, "s2")
     }
     
 }

@@ -13,7 +13,7 @@ public struct Injected<Value> {
     
     typealias LazyInject = () -> Value
     
-    private let name: String?
+    private let tag: String?
     private var _value: Value?
     private var lazy: LazyInject?
     
@@ -30,27 +30,17 @@ public struct Injected<Value> {
         }
     }
 
-    public init() {
+    public init(_ tag: String? = "") {
         let bundle = (Value.self as? AnyClass).flatMap { Bundle(for: $0) }
         let lazy: LazyInject = { DICE.sharedContainer.resolve(bundle: bundle) }
         self.lazy = lazy
-        self.name = nil
+        self.tag = tag
     }
-    
-    // TODO - Add implementation so we can inject by property name
-//    public init(_ name: String) {
-//        let bundle = (Value.self as? AnyClass).flatMap { Bundle(for: $0) }
-//        let lazy: LazyInject = { DICE.sharedContainer.resolve(bundle: bundle) }
-//        self.lazy = lazy
-//        self.name = name
-//    }
     
 }
 
 extension Injected: InjectableProperty {
-    
-    var type: Any.Type {
-        return Value.self
+    var key: DependencyKey {
+        return DependencyKey(type: Value.self, tag: tag)
     }
-    
 }

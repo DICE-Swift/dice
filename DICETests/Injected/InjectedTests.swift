@@ -17,12 +17,12 @@ class InjectedTests: XCTestCase {
         super.setUp()
         
         container.register(InternalServiceType.self) { _ in
-            return InternalService()
+            return InternalService(test: "stringInternal")
         }
         
         container.register(InjectableServiceType.self) { container in
             let service: InternalServiceType = container.resolve()
-            service.test()
+            XCTAssertEqual(service.test, "stringInternal")
             return InjectableService()
         }
         

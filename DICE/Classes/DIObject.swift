@@ -11,6 +11,7 @@ class DIObject: CustomDebugStringConvertible {
     
     let lazy: LazyObject
     let type: Any.Type
+    let key: DependencyKey
     var scope: DIScope
     
     var debugDescription: String {
@@ -27,10 +28,11 @@ class DIObject: CustomDebugStringConvertible {
         return nil
     }
     
-    init(lazy: LazyObject, type: Any.Type, scope: DIScope) {
+    init(lazy: LazyObject, type: Any.Type, scope: DIScope, key: DependencyKey) {
         self.lazy = lazy
         self.type = type
         self.scope = scope
+        self.key = key
     }
     
 }
