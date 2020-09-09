@@ -6,8 +6,8 @@
 [![License](https://img.shields.io/cocoapods/l/DICE.svg?style=flat)](https://cocoapods.org/pods/DICE)
 [![Platform](https://img.shields.io/cocoapods/p/DICE.svg?style=flat)](https://cocoapods.org/pods/DICE)
 
-DICE is a lightweight Swift framework that provides property based dependency injection for Swift 5.1+ projects.
-DICE provides service locator pattern with the help of containers. You could easily inject your dependencies through property wrappers or through DI container.
+DICE is a lightweight Swift framework that provides property based dependency injection for Swift and SwiftUI projects.
+DICE also provides service locator pattern with the help of containers. Easily inject your dependencies through property wrappers or through DI container.
 DICE supports different [scopes](https://github.com/DICE-Swift/dice#scopes) (singleton, lazy weak, lazy prototype, lazy object graph).
 
 ## Requirements
