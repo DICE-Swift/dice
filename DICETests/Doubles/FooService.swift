@@ -1,18 +1,18 @@
 //
-//  InternalService.swift
+//  BarService.swift
 //  DICETests
 //
-//  Created by nb-058-41b on 9/7/20.
+//  Created by Alexander Tereshkov on 6/28/20.
 //  Copyright © 2020 DICE. All rights reserved.
 //
 
 import Foundation
 
-protocol BarServiceType {
+protocol FooServiceType {
     var test: String? { get set }
 }
 
-class BarService: BarServiceType {
+class FooService: FooServiceType {
     
     var test: String?
     

@@ -24,35 +24,25 @@ class InjectedTests: XCTestCase {
 extension InjectedTests {
     
     func testInjectedServiceShouldBeInitializedAndAccessible() {
-        container.register(InternalServiceType.self, tag: "dependency1") { _ in
-            return InternalService(test: "stringInternal")
+        container.register(BarServiceType.self, tag: "dependency1") { _ in
+            return BarService(test: "stringInternal")
         }
         
-        container.register(InjectableServiceType.self) { container in
-            let service: InternalServiceType = container.resolve(tag: "dependency1")
-            return InjectableService()
+        container.register(FooServiceType.self) { container in
+            let service: BarServiceType = container.resolve(tag: "dependency1")
+            return FooService()
         }
         
         DICE.use(container)
         
         let dummyClass = DummyClass()
-        XCTAssertNoThrow(try dummyClass.verify())
-        XCTAssertNoThrow(try dummyClass.verify2())
+        XCTAssertNotNil(dummyClass.fooService)
+        XCTAssertNotNil(dummyClass.barService)
     }
     
 }
 
 class DummyClass {
-    
-    @Injected var injectableService: InjectableServiceType
-    @Injected("dependency1") var internalService: InternalServiceType
-    
-    func verify() throws -> InjectableServiceType {
-        return injectableService
-    }
-    
-    func verify2() throws -> InternalServiceType {
-        return internalService
-    }
-    
+    @Injected var fooService: FooServiceType
+    @Injected("dependency1") var barService: BarServiceType
 }

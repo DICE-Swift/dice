@@ -1,5 +1,5 @@
 //
-//  InternalService.swift
+//  BarService.swift
 //  DICETests
 //
 //  Created by nb-058-41b on 9/7/20.

@@ -24,20 +24,20 @@ class ResolveTests: XCTestCase {
 extension ResolveTests {
     
     func testResolveServiceShouldResolveInstance() {
-        container.register(InjectableServiceType.self, tag: "s1", scope: .single) { _ in
-            return InjectableService(test: "s1")
+        container.register(FooServiceType.self, tag: "s1", scope: .single) { _ in
+            return FooService(test: "s1")
         }
         
-        container.register(InjectableServiceType.self, tag: "s2", scope: .single) { _ in
-            return InjectableService(test: "s2")
+        container.register(FooServiceType.self, tag: "s2", scope: .single) { _ in
+            return FooService(test: "s2")
         }
         
         DICE.use(container)
         
-        let service1: InjectableServiceType = container.resolve(tag: "s1")
+        let service1: FooServiceType = container.resolve(tag: "s1")
         XCTAssertEqual(service1.test, "s1")
         
-        let service2: InjectableServiceType = container.resolve(tag: "s2")
+        let service2: FooServiceType = container.resolve(tag: "s2")
         XCTAssertEqual(service2.test, "s2")
     }
     

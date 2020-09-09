@@ -8,11 +8,11 @@
 
 import Foundation
 
-protocol InjectableServiceType {
+protocol FooServiceType {
     var test: String? { get set }
 }
 
-class InjectableService: InjectableServiceType {
+class FooService: FooServiceType {
     
     var test: String?
     

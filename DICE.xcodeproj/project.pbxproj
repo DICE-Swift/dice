@@ -10,7 +10,7 @@
 		CB6EE38B24A8EF1900B28F09 /* DICE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6EE38124A8EF1900B28F09 /* DICE.framework */; };
 		CB6EE39024A8EF1900B28F09 /* InjectedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE38F24A8EF1900B28F09 /* InjectedTests.swift */; };
 		CB6EE39224A8EF1900B28F09 /* DICE.h in Headers */ = {isa = PBXBuildFile; fileRef = CB6EE38424A8EF1900B28F09 /* DICE.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB6EE3A324A8F11000B28F09 /* InjectableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE3A224A8F11000B28F09 /* InjectableService.swift */; };
+		CB6EE3A324A8F11000B28F09 /* FooService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE3A224A8F11000B28F09 /* FooService.swift */; };
 		CB93C0552508FB1B00816584 /* DependencyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB93C0542508FB1B00816584 /* DependencyKey.swift */; };
 		CBC79BF42506585000DA8BE0 /* NSRecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BE72506584F00DA8BE0 /* NSRecursiveLock.swift */; };
 		CBC79BF52506585000DA8BE0 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BE82506584F00DA8BE0 /* Injected.swift */; };
@@ -27,7 +27,7 @@
 		CBC79C0A250667CB00DA8BE0 /* EnvironmentObservableInjected.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C09250667CB00DA8BE0 /* EnvironmentObservableInjected.swift */; };
 		CBC79C0D250668FF00DA8BE0 /* DIContainerEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C0C250668FF00DA8BE0 /* DIContainerEnvironmentKey.swift */; };
 		CBC79C0F2506698800DA8BE0 /* DICE+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C0E2506698800DA8BE0 /* DICE+SwiftUI.swift */; };
-		CBC79C112506954700DA8BE0 /* InternalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C102506954700DA8BE0 /* InternalService.swift */; };
+		CBC79C112506954700DA8BE0 /* BarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C102506954700DA8BE0 /* BarService.swift */; };
 		CBC79C142506ADAE00DA8BE0 /* DIScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C132506ADAE00DA8BE0 /* DIScope.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +48,7 @@
 		CB6EE38A24A8EF1900B28F09 /* DICETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DICETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6EE38F24A8EF1900B28F09 /* InjectedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedTests.swift; sourceTree = "<group>"; };
 		CB6EE39124A8EF1900B28F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB6EE3A224A8F11000B28F09 /* InjectableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableService.swift; sourceTree = "<group>"; };
+		CB6EE3A224A8F11000B28F09 /* FooService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooService.swift; sourceTree = "<group>"; };
 		CB93C0542508FB1B00816584 /* DependencyKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyKey.swift; sourceTree = "<group>"; };
 		CBC79BE72506584F00DA8BE0 /* NSRecursiveLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSRecursiveLock.swift; sourceTree = "<group>"; };
 		CBC79BE82506584F00DA8BE0 /* Injected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		CBC79C09250667CB00DA8BE0 /* EnvironmentObservableInjected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObservableInjected.swift; sourceTree = "<group>"; };
 		CBC79C0C250668FF00DA8BE0 /* DIContainerEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerEnvironmentKey.swift; sourceTree = "<group>"; };
 		CBC79C0E2506698800DA8BE0 /* DICE+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DICE+SwiftUI.swift"; sourceTree = "<group>"; };
-		CBC79C102506954700DA8BE0 /* InternalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalService.swift; sourceTree = "<group>"; };
+		CBC79C102506954700DA8BE0 /* BarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarService.swift; sourceTree = "<group>"; };
 		CBC79C132506ADAE00DA8BE0 /* DIScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIScope.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,8 +150,8 @@
 		CB6EE3A024A8F0FD00B28F09 /* Doubles */ = {
 			isa = PBXGroup;
 			children = (
-				CB6EE3A224A8F11000B28F09 /* InjectableService.swift */,
-				CBC79C102506954700DA8BE0 /* InternalService.swift */,
+				CB6EE3A224A8F11000B28F09 /* FooService.swift */,
+				CBC79C102506954700DA8BE0 /* BarService.swift */,
 			);
 			path = Doubles;
 			sourceTree = "<group>";
@@ -333,8 +333,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBC79C042506632300DA8BE0 /* ResolveTests.swift in Sources */,
-				CB6EE3A324A8F11000B28F09 /* InjectableService.swift in Sources */,
-				CBC79C112506954700DA8BE0 /* InternalService.swift in Sources */,
+				CB6EE3A324A8F11000B28F09 /* FooService.swift in Sources */,
+				CBC79C112506954700DA8BE0 /* BarService.swift in Sources */,
 				CB6EE39024A8EF1900B28F09 /* InjectedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
