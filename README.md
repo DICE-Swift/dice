@@ -8,7 +8,7 @@
 
 DICE is a lightweight Swift framework that provides property based dependency injection for Swift 5.1+ projects.
 DICE provides service locator pattern with the help of containers. You could easily inject your dependencies through property wrappers or through DI container.
-Dice supports different [scopes](https://github.com/DICE-Swift/dice#scopes)(singleton, lazy weak, lazy prototype, lazy object graph). So you can choose which one is better for your case.
+Dice supports different [scopes] (https://github.com/DICE-Swift/dice#scopes)(singleton, lazy weak, lazy prototype, lazy object graph). So you can choose which one is better for your case.
 
 ## Requirements
 
@@ -41,12 +41,12 @@ let container = DIContainer()
 **2. Register your instances**
 
 ```swift
-container.register(InternalServiceType.self) { _ in
-    return InternalService()
+container.register(DummyServiceType.self) { _ in
+    return DummyService()
 }
 ```
 
-E.g. DummyServiceType is just a protocol and InternalService is an implementation.
+E.g. DummyServiceType is just a protocol and DummyService is an implementation.
 
 ```swift
 protocol DummyServiceType {
@@ -75,7 +75,6 @@ import UIKit
 import DICE
 
 class ViewController: UIViewController {
-    
     let container = DIContainer()
     // In real case you'll need to pass container in ViewController or another class and all the dependencies should have been already registered prior to using container
     
@@ -94,7 +93,6 @@ class ViewController: UIViewController {
         // It should print "DummyService" in Xcode console
         // If you get error here, so check previous steps or open an issue
     }
-    
 }
 ```
 
@@ -105,7 +103,6 @@ import UIKit
 import DICE
 
 class ViewController: UIViewController {
-    
     @Injected var dummyService: DummyServiceType
     
     override func viewDidLoad() {
@@ -115,7 +112,6 @@ class ViewController: UIViewController {
         // It should print "DummyService" in Xcode console
         // If you get error here, so check previous steps or open an issue
     }
-    
 }
 ```
 
@@ -127,7 +123,6 @@ Dynamic view property wrapper that subscribes to a `ObservableObject` automatica
 
 ```swift
 struct ContentView: View {
-
     @EnvironmentObservableInjected var viewModel: ContentViewModel
 
     var body: some View {
@@ -154,7 +149,6 @@ Property wrapper that inject object from environment container. Read only object
 
 ```swift
 struct ContentView: View {
-
     @EnvironmentInjected var service: WebService
 
     var body: some View {
