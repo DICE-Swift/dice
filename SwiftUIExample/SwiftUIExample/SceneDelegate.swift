@@ -18,10 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
-        container.register() { _ in
+        container.register(scope: .objectGraph) { _ in
             return ContentViewModel()
         }
         
+        DICE.Defaults.scope = .objectGraph
         DICE.use(container)
         
         let contentView = ContentView()

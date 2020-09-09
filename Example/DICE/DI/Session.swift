@@ -18,7 +18,7 @@ class Session: SessionType {
     init() {
         let internalDependency = DummyInternalDependency(value: 100)
         
-        container.register(DummyServiceType.self) { _ in
+        container.register(DummyServiceType.self, scope: .single) { _ in
             return DummyService(res: "123", dummyInternalDependency: internalDependency)
         }
         
