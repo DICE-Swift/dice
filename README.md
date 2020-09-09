@@ -81,7 +81,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        container.register(DummyServiceType.self) { _ in
+        container.register(DummyServiceType.self, scope: .single) { _ in
             return DummyService()
         }
         
@@ -164,7 +164,16 @@ struct ContentView: View {
 
 ## Scopes
 
-**Default scope** is `DIScope.objectGraph`.
+### Default scope
+
+Default scope is `DIScope.objectGraph`. All registered objects will use default scope if no scope set when registering.
+It can be changed by setting `DICE.Defaults.scope`, for example:
+
+```swift
+DICE.Defaults.scope = .single
+```
+
+### Supported scopes
 
 * `DIScope.single`
 
@@ -188,12 +197,12 @@ Object will be instantiated only after first call.
 
 ### How to set scope
 
-You can specify scopy by using `.scope(DIScope)` when registering an object. If no scope set then default scope `DIScope.objectGraph` is used.
+You can specify scopy by using optional `scope` parameter when registering an object. If no scope passed then default scope `DIScope.Defaults.scope` is used.
 
 ```swift
-container.register(InjectableServiceType.self) { _ in
+container.register(InjectableServiceType.self, scope: .objectGraph) { _ in
     return InjectableService()
-}.scope(.objectGraph)
+}
 ```
 
 ## Using container resolver when injecting
