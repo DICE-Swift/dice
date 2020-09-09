@@ -32,13 +32,19 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Inject through DI container
 
-**1. Declare your container**
+1. Add import
+
+```swift
+import DICE
+```
+
+**2. Declare your container**
 
 ```swift
 let container = DIContainer()
 ```
 
-**2. Register your instances**
+**3. Register your instances**
 
 ```swift
 container.register(DummyServiceType.self) { _ in
@@ -60,13 +66,13 @@ class DummyService: DummyServiceType {
 }
 ```
 
-**3. Pass container to DICE**
+**4. Pass container to DICE**
 
 ```swift
 DICE.use(container)
 ```
 
-**4. Resolve instance**
+**5. Resolve instance**
 
 **Using DIContainer**
 
