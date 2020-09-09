@@ -32,7 +32,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Inject through DI container
 
-1. Add import
+**1. Add import**
 
 ```swift
 import DICE
