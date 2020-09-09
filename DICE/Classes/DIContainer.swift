@@ -30,9 +30,21 @@ public final class DIContainer: CustomStringConvertible {
 extension DIContainer {
     
     @discardableResult
-    public func register<T>(_ type: T.Type = T.self, _ initialize: @escaping (DIContainer) -> T) -> DIContainerBuilder<T> {
-        let initer = LazyObject(initBlock: initialize, container: self)
-        return DIContainerBuilder(container: self, object: DIObject(lazy: initer, type: type))
+    public func register<T>(_ type: T.Type = T.self, scope: DIScope? = nil, _ closure: @escaping (DIContainer) -> T) -> DIContainerBuilder<T> {
+        let scope = scope ?? DICE.Defaults.scope
+        
+        let initer = LazyObject(initBlock: closure, container: self)
+        let object = DIObject(lazy: initer, type: type, scope: scope)
+        
+        // Add singleton objects to instantiate objects right away before building to make it accessible right after injection and resolving nested dependencies
+        // Aslo avoids race condition reported in https://github.com/DICE-Swift/dice/issues/8
+        if object.scope == .single {
+            let resolvedObject = closure(self) as Any
+            resolveStorage[ObjectIdentifier(type)] = resolvedObject
+            return DIContainerBuilder(container: self, object: object)
+        }
+        
+        return DIContainerBuilder(container: self, object: object)
     }
     
     public func resolve<T>(bundle: Bundle? = nil) -> T {
@@ -43,29 +55,11 @@ extension DIContainer {
         }
     }
     
-    public func didSetSharedContainer() {
-        resolveSingletones()
-    }
-    
 }
 
 // MARK: - Private
 
 private extension DIContainer {
-    
-    func resolveSingletones() {
-        let objects = containerStorage.objects.filter { $0.scope == .single }
-        for object in objects {
-            addSingleton(object)
-        }
-    }
-    
-    /// Adds singletone instance to the storage making it accessible
-    /// - Parameter object: Object to store in storage
-    func addSingleton(_ object: DIObject) {
-        let resolvedObject = object.lazy.resolve() as Any
-        resolveStorage[ObjectIdentifier(object.type)] = resolvedObject
-    }
     
     func makeObject(for type: Any.Type, bundle: Bundle?, usingObject: DIObject? = nil) -> Any? {
         let object = usingObject ?? findObject(for: type, bundle: bundle)

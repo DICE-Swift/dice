@@ -25,7 +25,6 @@ public extension DICE {
     /// When container is set for usage then dependencies can be resolved through environment variables `Injected`, `EnvironmentObservableInjected` and `EnvironmentInjected`
     static func use(_ container: DIContainer) {
         self.sharedContainer = container
-        container.didSetSharedContainer()
     }
     
 }

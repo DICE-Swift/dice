@@ -11,8 +11,7 @@ class DIObject: CustomDebugStringConvertible {
     
     let lazy: LazyObject
     let type: Any.Type
-    
-    var scope: DIScope = DICE.Defaults.scope
+    var scope: DIScope
     
     var debugDescription: String {
         let address = Unmanaged.passUnretained(self).toOpaque()
@@ -28,9 +27,10 @@ class DIObject: CustomDebugStringConvertible {
         return nil
     }
     
-    init(lazy: LazyObject, type: Any.Type) {
+    init(lazy: LazyObject, type: Any.Type, scope: DIScope) {
         self.lazy = lazy
         self.type = type
+        self.scope = scope
     }
     
 }

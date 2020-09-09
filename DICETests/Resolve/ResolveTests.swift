@@ -16,9 +16,9 @@ class ResolveTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        container.register(InjectableServiceType.self) { _ in
+        container.register(InjectableServiceType.self, scope: .single) { _ in
             return InjectableService()
-        }.scope(.objectGraph)
+        }
         
         DICE.use(container)
     }

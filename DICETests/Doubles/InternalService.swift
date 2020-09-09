@@ -16,6 +16,10 @@ protocol InternalServiceType {
 
 class InternalService: InternalServiceType {
     
+    init() {
+        Swift.print("Init InternalService")
+    }
+    
     func test() {
         Swift.print("InternalService")
     }
