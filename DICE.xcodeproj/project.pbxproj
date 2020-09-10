@@ -13,6 +13,8 @@
 		CB6EE3A324A8F11000B28F09 /* FooService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE3A224A8F11000B28F09 /* FooService.swift */; };
 		CB93C0552508FB1B00816584 /* DependencyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB93C0542508FB1B00816584 /* DependencyKey.swift */; };
 		CB93C058250A3DB100816584 /* DiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB93C057250A3DB100816584 /* DiceTests.swift */; };
+		CB93C05B250A583500816584 /* EnvironmentInjectedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB93C05A250A583500816584 /* EnvironmentInjectedTests.swift */; };
+		CB93C05D250A944C00816584 /* EnvironmentObvservableInjectedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB93C05C250A944C00816584 /* EnvironmentObvservableInjectedTests.swift */; };
 		CBC79BF42506585000DA8BE0 /* NSRecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BE72506584F00DA8BE0 /* NSRecursiveLock.swift */; };
 		CBC79BF52506585000DA8BE0 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BE82506584F00DA8BE0 /* Injected.swift */; };
 		CBC79BF62506585000DA8BE0 /* DIObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79BE92506585000DA8BE0 /* DIObject.swift */; };
@@ -52,6 +54,8 @@
 		CB6EE3A224A8F11000B28F09 /* FooService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooService.swift; sourceTree = "<group>"; };
 		CB93C0542508FB1B00816584 /* DependencyKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyKey.swift; sourceTree = "<group>"; };
 		CB93C057250A3DB100816584 /* DiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceTests.swift; sourceTree = "<group>"; };
+		CB93C05A250A583500816584 /* EnvironmentInjectedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentInjectedTests.swift; sourceTree = "<group>"; };
+		CB93C05C250A944C00816584 /* EnvironmentObvservableInjectedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObvservableInjectedTests.swift; sourceTree = "<group>"; };
 		CBC79BE72506584F00DA8BE0 /* NSRecursiveLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSRecursiveLock.swift; sourceTree = "<group>"; };
 		CBC79BE82506584F00DA8BE0 /* Injected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
 		CBC79BE92506585000DA8BE0 /* DIObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIObject.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 				CB93C056250A3DA500816584 /* Core */,
 				CB6EE3A124A8F10100B28F09 /* Injected */,
 				CBC79C022506631700DA8BE0 /* Resolve */,
+				CB93C059250A57F900816584 /* SwiftUI */,
 				CB6EE39124A8EF1900B28F09 /* Info.plist */,
 			);
 			path = DICETests;
@@ -173,6 +178,15 @@
 				CB93C057250A3DB100816584 /* DiceTests.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		CB93C059250A57F900816584 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				CB93C05A250A583500816584 /* EnvironmentInjectedTests.swift */,
+				CB93C05C250A944C00816584 /* EnvironmentObvservableInjectedTests.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 		CBC79C022506631700DA8BE0 /* Resolve */ = {
@@ -346,7 +360,9 @@
 				CBC79C042506632300DA8BE0 /* ResolveTests.swift in Sources */,
 				CB6EE3A324A8F11000B28F09 /* FooService.swift in Sources */,
 				CBC79C112506954700DA8BE0 /* BarService.swift in Sources */,
+				CB93C05B250A583500816584 /* EnvironmentInjectedTests.swift in Sources */,
 				CB93C058250A3DB100816584 /* DiceTests.swift in Sources */,
+				CB93C05D250A944C00816584 /* EnvironmentObvservableInjectedTests.swift in Sources */,
 				CB6EE39024A8EF1900B28F09 /* InjectedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
