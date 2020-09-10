@@ -13,6 +13,12 @@ class ResolveTests: XCTestCase {
     
     let container = DIContainer()
     
+    override func setUp() {
+        super.setUp()
+        
+        DICE.use(container)
+    }
+    
     override func tearDown() {
         super.tearDown()
         
@@ -31,8 +37,6 @@ extension ResolveTests {
         container.register(FooServiceType.self, tag: "s2", scope: .single) { _ in
             return FooService(test: "s2")
         }
-        
-        DICE.use(container)
         
         let service1: FooServiceType = container.resolve(tag: "s1")
         XCTAssertEqual(service1.test, "s1")

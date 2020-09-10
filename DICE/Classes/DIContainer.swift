@@ -9,14 +9,17 @@ import Foundation
 
 public final class DIContainer: CustomStringConvertible {
     
-    lazy var resolveStorage: [DependencyKey: Any] = [:]
-    private(set) var containerStorage = DIContainerStorage()
+    private(set) var id: String = UUID().uuidString
     
-    lazy var resolveObjectGraphStorage: [DependencyKey: Any] = [:]
-    var objectGraphStackDepth: Int = 0
+    private(set) var containerStorage = DIContainerStorage()
+    lazy private(set) var resolveStorage: [DependencyKey: Any] = [:]
+    
+    lazy private(set) var resolveObjectGraphStorage: [DependencyKey: Any] = [:]
+    private(set) var objectGraphStackDepth: Int = 0
     
     public var description: String {
-        return containerStorage.storedObjects.description
+        let descr = containerStorage.storedObjects.description
+        return String(format: "[DIContainer %@] %@", id, descr)
     }
     
     public init() {
@@ -127,6 +130,16 @@ private extension DIContainer {
         }
         
         return object
+    }
+    
+}
+
+// MARK: Equatable
+
+extension DIContainer: Equatable {
+    
+    public static func ==(lhs: DIContainer, rhs: DIContainer) -> Bool {
+        return lhs.id == rhs.id
     }
     
 }
