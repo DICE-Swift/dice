@@ -34,6 +34,7 @@
 		CBC79C142506ADAE00DA8BE0 /* DIScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC79C132506ADAE00DA8BE0 /* DIScope.swift */; };
 		CBEA8577250B948700DE0723 /* WeakObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA8576250B948700DE0723 /* WeakObjectTests.swift */; };
 		CBEA8579250B9D4900DE0723 /* LazyObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA8578250B9D4900DE0723 /* LazyObjectTests.swift */; };
+		CBEA857B250BA7A400DE0723 /* InjectablePropertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA857A250BA7A400DE0723 /* InjectablePropertyTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		CBC79C132506ADAE00DA8BE0 /* DIScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIScope.swift; sourceTree = "<group>"; };
 		CBEA8576250B948700DE0723 /* WeakObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakObjectTests.swift; sourceTree = "<group>"; };
 		CBEA8578250B9D4900DE0723 /* LazyObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyObjectTests.swift; sourceTree = "<group>"; };
+		CBEA857A250BA7A400DE0723 /* InjectablePropertyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectablePropertyTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 				CB93C057250A3DB100816584 /* DiceTests.swift */,
 				CBEA8576250B948700DE0723 /* WeakObjectTests.swift */,
 				CBEA8578250B9D4900DE0723 /* LazyObjectTests.swift */,
+				CBEA857A250BA7A400DE0723 /* InjectablePropertyTests.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				CBC79C042506632300DA8BE0 /* ResolveTests.swift in Sources */,
 				CB6EE3A324A8F11000B28F09 /* FooService.swift in Sources */,
 				CBC79C112506954700DA8BE0 /* BarService.swift in Sources */,
+				CBEA857B250BA7A400DE0723 /* InjectablePropertyTests.swift in Sources */,
 				CB93C05B250A583500816584 /* EnvironmentInjectedTests.swift in Sources */,
 				CBEA8579250B9D4900DE0723 /* LazyObjectTests.swift in Sources */,
 				CB93C058250A3DB100816584 /* DiceTests.swift in Sources */,
