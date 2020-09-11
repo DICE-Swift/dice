@@ -2,7 +2,7 @@
 //  DependencyKey.swift
 //  DICE
 //
-//  Created by nb-058-41b on 9/9/20.
+//  Created by Alexander Tereshkov on 9/9/20.
 //  Copyright © 2020 DICE. All rights reserved.
 //
 

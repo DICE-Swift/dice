@@ -35,6 +35,11 @@
 		CBEA8577250B948700DE0723 /* WeakObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA8576250B948700DE0723 /* WeakObjectTests.swift */; };
 		CBEA8579250B9D4900DE0723 /* LazyObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA8578250B9D4900DE0723 /* LazyObjectTests.swift */; };
 		CBEA857B250BA7A400DE0723 /* InjectablePropertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA857A250BA7A400DE0723 /* InjectablePropertyTests.swift */; };
+		CBEA857E250BACE400DE0723 /* SwiftUIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA857D250BACE400DE0723 /* SwiftUIViewTests.swift */; };
+		CBEA8580250BB15E00DE0723 /* DIObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA857F250BB15E00DE0723 /* DIObjectTests.swift */; };
+		CBEA8582250BC19000DE0723 /* DIScopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA8581250BC19000DE0723 /* DIScopeTests.swift */; };
+		CBEA8584250BC33A00DE0723 /* DIContainerStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA8583250BC33A00DE0723 /* DIContainerStorageTests.swift */; };
+		CBEA8586250BC93400DE0723 /* DIContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEA8585250BC93400DE0723 /* DIContainerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +84,11 @@
 		CBEA8576250B948700DE0723 /* WeakObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakObjectTests.swift; sourceTree = "<group>"; };
 		CBEA8578250B9D4900DE0723 /* LazyObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyObjectTests.swift; sourceTree = "<group>"; };
 		CBEA857A250BA7A400DE0723 /* InjectablePropertyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectablePropertyTests.swift; sourceTree = "<group>"; };
+		CBEA857D250BACE400DE0723 /* SwiftUIViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewTests.swift; sourceTree = "<group>"; };
+		CBEA857F250BB15E00DE0723 /* DIObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIObjectTests.swift; sourceTree = "<group>"; };
+		CBEA8581250BC19000DE0723 /* DIScopeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIScopeTests.swift; sourceTree = "<group>"; };
+		CBEA8583250BC33A00DE0723 /* DIContainerStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerStorageTests.swift; sourceTree = "<group>"; };
+		CBEA8585250BC93400DE0723 /* DIContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,9 +192,13 @@
 			isa = PBXGroup;
 			children = (
 				CB93C057250A3DB100816584 /* DiceTests.swift */,
+				CBEA8585250BC93400DE0723 /* DIContainerTests.swift */,
 				CBEA8576250B948700DE0723 /* WeakObjectTests.swift */,
 				CBEA8578250B9D4900DE0723 /* LazyObjectTests.swift */,
 				CBEA857A250BA7A400DE0723 /* InjectablePropertyTests.swift */,
+				CBEA857F250BB15E00DE0723 /* DIObjectTests.swift */,
+				CBEA8581250BC19000DE0723 /* DIScopeTests.swift */,
+				CBEA8583250BC33A00DE0723 /* DIContainerStorageTests.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -194,6 +208,7 @@
 			children = (
 				CB93C05A250A583500816584 /* EnvironmentInjectedTests.swift */,
 				CB93C05C250A944C00816584 /* EnvironmentObvservableInjectedTests.swift */,
+				CBEA857D250BACE400DE0723 /* SwiftUIViewTests.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -367,11 +382,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBC79C042506632300DA8BE0 /* ResolveTests.swift in Sources */,
+				CBEA8580250BB15E00DE0723 /* DIObjectTests.swift in Sources */,
 				CB6EE3A324A8F11000B28F09 /* FooService.swift in Sources */,
 				CBC79C112506954700DA8BE0 /* BarService.swift in Sources */,
+				CBEA8582250BC19000DE0723 /* DIScopeTests.swift in Sources */,
 				CBEA857B250BA7A400DE0723 /* InjectablePropertyTests.swift in Sources */,
 				CB93C05B250A583500816584 /* EnvironmentInjectedTests.swift in Sources */,
 				CBEA8579250B9D4900DE0723 /* LazyObjectTests.swift in Sources */,
+				CBEA8584250BC33A00DE0723 /* DIContainerStorageTests.swift in Sources */,
+				CBEA857E250BACE400DE0723 /* SwiftUIViewTests.swift in Sources */,
+				CBEA8586250BC93400DE0723 /* DIContainerTests.swift in Sources */,
 				CB93C058250A3DB100816584 /* DiceTests.swift in Sources */,
 				CB93C05D250A944C00816584 /* EnvironmentObvservableInjectedTests.swift in Sources */,
 				CB6EE39024A8EF1900B28F09 /* InjectedTests.swift in Sources */,

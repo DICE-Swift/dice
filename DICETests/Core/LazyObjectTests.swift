@@ -2,7 +2,7 @@
 //  LazyObjectTests.swift
 //  DICETests
 //
-//  Created by nb-058-41b on 9/11/20.
+//  Created by Alexander Tereshkov on 9/11/20.
 //  Copyright © 2020 DICE. All rights reserved.
 //
 

@@ -66,7 +66,7 @@ extension InjectedTests {
         }
         
         container.register(FooServiceType.self) { container in
-            let service: BarServiceType = container.resolve(tag: "dependency1")
+            let _: BarServiceType = container.resolve(tag: "dependency1")
             return FooService()
         }
         
