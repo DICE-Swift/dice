@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DICE'
-  s.version          = '0.9.0'
+  s.version          = '0.9.1'
   s.summary          = 'Lightweight DI framework for Swift and SwiftUI'
 
   s.description      = "DICE is a lightweight Swift framework that provides management system for dependency injection for Swift and SwiftUI."
