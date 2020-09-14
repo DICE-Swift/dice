@@ -7,30 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06A4C19FB0032ADEC27E3FE1D08730A5 /* LazyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EE5261A78DEA3F946B9B3F6FEF7F94 /* LazyObject.swift */; };
+		06B25B6F3D9F2B987A43D8FF6A9180E1 /* WeakObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE750C513835ECE31E87BACBB17FB7C7 /* WeakObject.swift */; };
+		0E5B5A1D308441028397F7DB186D6D1D /* DIContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84936CAED19D2ACCB24AFC0AEB09521D /* DIContainerBuilder.swift */; };
 		14BB0D905720FA859FD9244BEEC1632D /* Pods-DICE_ExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4862F1A96A25C0516D7BD6E6C30C8228 /* Pods-DICE_ExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1597B5CC86D2F4F6D148C43C21DA8EDA /* EnvironmentObservableInjected.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6642F4800C0E3F81F4E7E36938B556B /* EnvironmentObservableInjected.swift */; };
-		1E900F0EB30FEDCEE47A8BEA18AD160E /* DICE+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0B4D33BD298056A18C29B1A3B3D494 /* DICE+SwiftUI.swift */; };
-		22ED7A7994810AAC5A56896D17C64288 /* DIContainerStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAE4C64CEBD1B23640DB19BD2C96507 /* DIContainerStorage.swift */; };
-		2478DA5524F9BB704CF95815AAF32346 /* InjectableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30E58E3A9AD2B58C59DCF71F5321A7 /* InjectableProperty.swift */; };
-		26E5E29CF806B98ED4ED2236EF5372F2 /* DICE.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E5C640E731F2879652BE6C59035E22 /* DICE.swift */; };
-		2EA2CE8048DB29E66914192B709DED88 /* NSRecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9703F862D3CEDF6CBECB88042EBD696F /* NSRecursiveLock.swift */; };
-		45E9C150A30D95BE31362459BDC010EE /* EnvironmentInjected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307B8425FB5AB20AF6F1C3CBF597495A /* EnvironmentInjected.swift */; };
+		1CD28AE40B07D72894F13F6FDBDBCC45 /* DIContainerEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF581465BC9C9B2C0FC99CE85FB79FA /* DIContainerEnvironmentKey.swift */; };
+		25676BBEF8C063F7C5760D8EF95D7AAE /* DIObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A553D1D14492B041A09E1F5AFE244D9 /* DIObject.swift */; };
+		261AD814DB79AE10B3A57099F4B1021C /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB88F18DB081906BF09D5D3093309A9 /* Injected.swift */; };
+		2BA39F7DEC8479B79EFCB979B89EE6A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2D40206D375AC6614808E23E1D224CC0 /* InjectableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF921501F5ACD32ED3372477958F3B5 /* InjectableProperty.swift */; };
+		35C2C6CD8FFB51A2DC623553A459FD83 /* DICE-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E2A9EF3345F5F1559C222DD5249000 /* DICE-dummy.m */; };
+		40AE5A0A8FC50071968C2A4B809FEECF /* DependencyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79A9A33ACB0C39A98E25B567FBA33FE /* DependencyKey.swift */; };
+		40C748C9C8B9B0CCE798AD6A087CEEF3 /* DIScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60768EF637A3F532517AC610DC8ABA1 /* DIScope.swift */; };
 		468B03AA3BC8E8205B96D62E3CA28DA5 /* Pods-DICE_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7FC624610B0E690043A2A26A0120E9A /* Pods-DICE_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		59E9F1980D25C86357DC07A79C55E09F /* DICE-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B72884295444BA0F094703A98793222 /* DICE-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		64EB3119EA56E0125B996D2AEA7F5E9D /* DIObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6376813BB3036250A56CAD5B48F6C2 /* DIObject.swift */; };
+		4FA50B1CF2132E2C417999FF9E4A7BED /* EnvironmentObservableInjected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C141A417A93220E206BCDE22420FD /* EnvironmentObservableInjected.swift */; };
+		52C2203634390B1F258D51308AC68D63 /* DICE-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B1F68FFAA70B77AE95FC571A7434733 /* DICE-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CCAB47CAED758D23F3B9E25D84D9675 /* LazyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06DDF6631DD7D141EC2C6D0DD51E106 /* LazyObject.swift */; };
 		6B3FBDFCFBF370406AA590FC475C5641 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		7F3ABC3E0B44F51C8BBA43BFD94DA6B3 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817C6C42C998F5AE662D16FED141833 /* Injected.swift */; };
-		8573AA12C1D693EEF22D99EFADDC19DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8222C66E5C8EA4C7F076752FBD6C03C2 /* NSRecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D9056AD142175C9F54AF2AFFE455E3 /* NSRecursiveLock.swift */; };
+		8FE62C75108513124D79B118412A4201 /* DICE+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59D207874F6598E79E4D8B784A8AF2E /* DICE+SwiftUI.swift */; };
 		A83CED0165066B1C4310A41C22E256FC /* Pods-DICE_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F268102762B28B1094F0DE9B30BE504 /* Pods-DICE_Example-dummy.m */; };
 		AB92FEDC65DB921D90E5CC4F9B8DB191 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		B1AAABA1F4402A1E28D2A62D6FAF1840 /* DIScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B48E7CA9204461C5689A9C63E61F7F /* DIScope.swift */; };
-		BACCCB26C6B002F6F4A865E50F23FE64 /* DICE-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A33BA0317788B1D26C25CE9A9818C839 /* DICE-dummy.m */; };
-		E2DB5472E9C2F36B64CEE508E0BDDDA7 /* DIContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E66B8D3B22A48061B370E481664B52 /* DIContainerBuilder.swift */; };
-		EA63E03B7ACF1C23A14143C59F1D388A /* WeakObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8238C10B7E1E7A73DFE46EE71F3E3E7 /* WeakObject.swift */; };
+		AFDD4BCF8C02FA863DED05F046F35523 /* DIContainerStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C87D55C863903808E83C8A81D72B5D /* DIContainerStorage.swift */; };
+		C50613683264B0C8423B88CE77A2BE2E /* DICE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B04C8E2F8AE0FB36ED82ACC8630B309 /* DICE.swift */; };
+		DA1229FD47AA68CB145368C318A0060C /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9601BBA2F1182784C8281233F57B90EA /* DIContainer.swift */; };
+		E7C7615EC96FF4702F9A80AD8FBD05FF /* EnvironmentInjected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F5A5EE0F0B2C0479D62A6DE2824F2 /* EnvironmentInjected.swift */; };
 		F468C42944932C934960B5E4D1A00E65 /* Pods-DICE_ExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C503B263FE7108F626C218DA3608DCB /* Pods-DICE_ExampleTests-dummy.m */; };
-		F95856F80EE6048E446B5F3A16F5EC63 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF9F7C6781D6C9F1CEFF794ABBCB663 /* DIContainer.swift */; };
-		FAC8D1AC4C5609CF122AEA619D79BDE5 /* DIContainerEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B34F41FA5190F0EE0BACC96A6900B3D /* DIContainerEnvironmentKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,52 +52,53 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0412A4627FAE587F1B724BB0AE0557E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		07E66B8D3B22A48061B370E481664B52 /* DIContainerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIContainerBuilder.swift; path = DICE/Classes/DIContainerBuilder.swift; sourceTree = "<group>"; };
-		0D35F80410BC6E69FC6431D2E2692B7B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		044C141A417A93220E206BCDE22420FD /* EnvironmentObservableInjected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EnvironmentObservableInjected.swift; sourceTree = "<group>"; };
 		0F88497C6B29B28B8B7B7FDF749B1F06 /* Pods-DICE_ExampleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DICE_ExampleTests-Info.plist"; sourceTree = "<group>"; };
-		1A7B763DA30FC085678780C90C9FD73F /* DICE-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DICE-prefix.pch"; sourceTree = "<group>"; };
-		24EE5261A78DEA3F946B9B3F6FEF7F94 /* LazyObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LazyObject.swift; path = DICE/Classes/LazyObject.swift; sourceTree = "<group>"; };
+		10D9056AD142175C9F54AF2AFFE455E3 /* NSRecursiveLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSRecursiveLock.swift; sourceTree = "<group>"; };
+		12E2A9EF3345F5F1559C222DD5249000 /* DICE-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DICE-dummy.m"; sourceTree = "<group>"; };
+		2A553D1D14492B041A09E1F5AFE244D9 /* DIObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIObject.swift; path = DICE/Classes/DIObject.swift; sourceTree = "<group>"; };
 		2AF26C677D427A040191C24179BC96D7 /* Pods-DICE_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DICE_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		307B8425FB5AB20AF6F1C3CBF597495A /* EnvironmentInjected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EnvironmentInjected.swift; sourceTree = "<group>"; };
+		2E2F5A5EE0F0B2C0479D62A6DE2824F2 /* EnvironmentInjected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EnvironmentInjected.swift; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		32B48E7CA9204461C5689A9C63E61F7F /* DIScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIScope.swift; path = DICE/Classes/DIScope.swift; sourceTree = "<group>"; };
 		3D62B4CC251B96A8979670D85592E464 /* Pods-DICE_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DICE_Example.modulemap"; sourceTree = "<group>"; };
 		43AD922E999B98F0B705535B5B6F3013 /* Pods-DICE_ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DICE_ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		477582F9B8B806CB9BC31985BDC2F200 /* Pods_DICE_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DICE_ExampleTests.framework; path = "Pods-DICE_ExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4862F1A96A25C0516D7BD6E6C30C8228 /* Pods-DICE_ExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DICE_ExampleTests-umbrella.h"; sourceTree = "<group>"; };
+		59664C2D755D926136F0951E8927CEC3 /* DICE.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DICE.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5C503B263FE7108F626C218DA3608DCB /* Pods-DICE_ExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DICE_ExampleTests-dummy.m"; sourceTree = "<group>"; };
 		5CDE929CDF98E749098B0CA039E54D84 /* Pods-DICE_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DICE_Example-Info.plist"; sourceTree = "<group>"; };
+		6B1F68FFAA70B77AE95FC571A7434733 /* DICE-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DICE-umbrella.h"; sourceTree = "<group>"; };
 		6BD13B995646920D1B7471B1D9898195 /* Pods-DICE_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DICE_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6D41B80C76D5D5DCE513C118DE941718 /* DICE.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DICE.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6DF581465BC9C9B2C0FC99CE85FB79FA /* DIContainerEnvironmentKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DIContainerEnvironmentKey.swift; sourceTree = "<group>"; };
 		6F268102762B28B1094F0DE9B30BE504 /* Pods-DICE_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DICE_Example-dummy.m"; sourceTree = "<group>"; };
-		72D319D309F6FF0B23825BD270F99272 /* DICE-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DICE-Info.plist"; sourceTree = "<group>"; };
-		77CFDA8C52A07B30862E9FB868593DB4 /* DICE.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DICE.xcconfig; sourceTree = "<group>"; };
-		7817C6C42C998F5AE662D16FED141833 /* Injected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
-		7F6376813BB3036250A56CAD5B48F6C2 /* DIObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIObject.swift; path = DICE/Classes/DIObject.swift; sourceTree = "<group>"; };
-		8AF9F7C6781D6C9F1CEFF794ABBCB663 /* DIContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIContainer.swift; path = DICE/Classes/DIContainer.swift; sourceTree = "<group>"; };
-		8B34F41FA5190F0EE0BACC96A6900B3D /* DIContainerEnvironmentKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DIContainerEnvironmentKey.swift; sourceTree = "<group>"; };
-		9703F862D3CEDF6CBECB88042EBD696F /* NSRecursiveLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSRecursiveLock.swift; sourceTree = "<group>"; };
+		726D97590400E300A178C8641A1E40AC /* DICE.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DICE.xcconfig; sourceTree = "<group>"; };
+		84936CAED19D2ACCB24AFC0AEB09521D /* DIContainerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIContainerBuilder.swift; path = DICE/Classes/DIContainerBuilder.swift; sourceTree = "<group>"; };
+		9601BBA2F1182784C8281233F57B90EA /* DIContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIContainer.swift; path = DICE/Classes/DIContainer.swift; sourceTree = "<group>"; };
 		9A66701E40084823FC2D3FF9DBC29DF6 /* Pods-DICE_ExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DICE_ExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9B72884295444BA0F094703A98793222 /* DICE-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DICE-umbrella.h"; sourceTree = "<group>"; };
+		9B04C8E2F8AE0FB36ED82ACC8630B309 /* DICE.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DICE.swift; path = DICE/Classes/DICE.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A11D45BD6B0621E34A60E5A1399EE4E6 /* DICE.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DICE.modulemap; sourceTree = "<group>"; };
-		A33BA0317788B1D26C25CE9A9818C839 /* DICE-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DICE-dummy.m"; sourceTree = "<group>"; };
-		AC0B4D33BD298056A18C29B1A3B3D494 /* DICE+SwiftUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "DICE+SwiftUI.swift"; sourceTree = "<group>"; };
+		9DB88F18DB081906BF09D5D3093309A9 /* Injected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
+		A25CFFCCDAF402A6103EE5F592EF9B2D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A79A9A33ACB0C39A98E25B567FBA33FE /* DependencyKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DependencyKey.swift; path = DICE/Classes/DependencyKey.swift; sourceTree = "<group>"; };
 		B5681F583C92956D544F42EAEDE82400 /* Pods-DICE_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DICE_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B599D48B9ADE68410FD009A90CF18BC7 /* Pods-DICE_ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DICE_ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B59D207874F6598E79E4D8B784A8AF2E /* DICE+SwiftUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "DICE+SwiftUI.swift"; sourceTree = "<group>"; };
 		B75C8497084C2F09F57500BFC1879102 /* Pods_DICE_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DICE_Example.framework; path = "Pods-DICE_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA30E58E3A9AD2B58C59DCF71F5321A7 /* InjectableProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InjectableProperty.swift; path = DICE/Classes/InjectableProperty.swift; sourceTree = "<group>"; };
 		BB1B7B9F5B214F18C9E24E31E89B0D85 /* Pods-DICE_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DICE_Example-frameworks.sh"; sourceTree = "<group>"; };
 		BB87974B18A48437F06C6542F0B614E3 /* Pods-DICE_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DICE_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C06DDF6631DD7D141EC2C6D0DD51E106 /* LazyObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LazyObject.swift; path = DICE/Classes/LazyObject.swift; sourceTree = "<group>"; };
 		C5B43DE049DF10E7F9772BA68BE6D9AF /* Pods-DICE_ExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DICE_ExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CAAE4C64CEBD1B23640DB19BD2C96507 /* DIContainerStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIContainerStorage.swift; path = DICE/Classes/DIContainerStorage.swift; sourceTree = "<group>"; };
-		D6642F4800C0E3F81F4E7E36938B556B /* EnvironmentObservableInjected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EnvironmentObservableInjected.swift; sourceTree = "<group>"; };
-		D8E5C640E731F2879652BE6C59035E22 /* DICE.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DICE.swift; path = DICE/Classes/DICE.swift; sourceTree = "<group>"; };
+		D09B4A41037C2F012E2F1B4E9B287496 /* DICE.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DICE.modulemap; sourceTree = "<group>"; };
+		D3DE857106443B230B3915CD5EF4EBFE /* DICE-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DICE-Info.plist"; sourceTree = "<group>"; };
+		DE750C513835ECE31E87BACBB17FB7C7 /* WeakObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakObject.swift; path = DICE/Classes/WeakObject.swift; sourceTree = "<group>"; };
+		DEF921501F5ACD32ED3372477958F3B5 /* InjectableProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InjectableProperty.swift; path = DICE/Classes/InjectableProperty.swift; sourceTree = "<group>"; };
+		E5AA3349E38F40D4F8C0702EBF65BD74 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E5C87D55C863903808E83C8A81D72B5D /* DIContainerStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIContainerStorage.swift; path = DICE/Classes/DIContainerStorage.swift; sourceTree = "<group>"; };
 		E7460E41D3A944D7725132D9A00E55B7 /* Pods-DICE_ExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DICE_ExampleTests.modulemap"; sourceTree = "<group>"; };
 		E7FC624610B0E690043A2A26A0120E9A /* Pods-DICE_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DICE_Example-umbrella.h"; sourceTree = "<group>"; };
 		EB3A19E0AD0C1B728490040EA7E06EB9 /* DICE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DICE.framework; path = DICE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8238C10B7E1E7A73DFE46EE71F3E3E7 /* WeakObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakObject.swift; path = DICE/Classes/WeakObject.swift; sourceTree = "<group>"; };
+		F60768EF637A3F532517AC610DC8ABA1 /* DIScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIScope.swift; path = DICE/Classes/DIScope.swift; sourceTree = "<group>"; };
+		F63409E24AD3827ACA212D2B264BC9B8 /* DICE-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DICE-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,14 +110,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51DC28B15DB4E2B4C7832AB5A269043C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8573AA12C1D693EEF22D99EFADDC19DD /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		ADC331820E8B60C651542FDC551B24E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,61 +118,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD681D382A4DFC6ACEA65BA580D643FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA39F7DEC8479B79EFCB979B89EE6A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C20093242792509E2231F3021BC3A40 /* Extensions */ = {
+		02BB179A36C3D011D26B24253E9261C9 /* PropertyWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				AC0B4D33BD298056A18C29B1A3B3D494 /* DICE+SwiftUI.swift */,
-				9703F862D3CEDF6CBECB88042EBD696F /* NSRecursiveLock.swift */,
-			);
-			name = Extensions;
-			path = DICE/Classes/Extensions;
-			sourceTree = "<group>";
-		};
-		290669CDA3DD7FC2A05A63E479AF3861 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A11D45BD6B0621E34A60E5A1399EE4E6 /* DICE.modulemap */,
-				77CFDA8C52A07B30862E9FB868593DB4 /* DICE.xcconfig */,
-				A33BA0317788B1D26C25CE9A9818C839 /* DICE-dummy.m */,
-				72D319D309F6FF0B23825BD270F99272 /* DICE-Info.plist */,
-				1A7B763DA30FC085678780C90C9FD73F /* DICE-prefix.pch */,
-				9B72884295444BA0F094703A98793222 /* DICE-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/DICE";
-			sourceTree = "<group>";
-		};
-		2E7A4F58C9B16E97158C1052E69408AC /* PropertyWrapper */ = {
-			isa = PBXGroup;
-			children = (
-				307B8425FB5AB20AF6F1C3CBF597495A /* EnvironmentInjected.swift */,
-				D6642F4800C0E3F81F4E7E36938B556B /* EnvironmentObservableInjected.swift */,
-				7817C6C42C998F5AE662D16FED141833 /* Injected.swift */,
+				2E2F5A5EE0F0B2C0479D62A6DE2824F2 /* EnvironmentInjected.swift */,
+				044C141A417A93220E206BCDE22420FD /* EnvironmentObservableInjected.swift */,
+				9DB88F18DB081906BF09D5D3093309A9 /* Injected.swift */,
 			);
 			name = PropertyWrapper;
 			path = DICE/Classes/PropertyWrapper;
 			sourceTree = "<group>";
 		};
-		3FF7DCE2B7F9F55B62A8F6F215B23F21 /* SwiftUI */ = {
+		2002DBFBF30639B5ABA386F1CFFD3DB1 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				8B34F41FA5190F0EE0BACC96A6900B3D /* DIContainerEnvironmentKey.swift */,
+				6DF581465BC9C9B2C0FC99CE85FB79FA /* DIContainerEnvironmentKey.swift */,
 			);
 			name = SwiftUI;
 			path = DICE/Classes/SwiftUI;
-			sourceTree = "<group>";
-		};
-		4336E973298482F7B8ABDFDADD19EF52 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				6D41B80C76D5D5DCE513C118DE941718 /* DICE.podspec */,
-				0D35F80410BC6E69FC6431D2E2692B7B /* LICENSE */,
-				0412A4627FAE587F1B724BB0AE0557E5 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		4543E7C0FE66139AD2A6F672C0B64AFB /* Pods-DICE_Example */ = {
@@ -198,6 +166,37 @@
 			path = "Target Support Files/Pods-DICE_Example";
 			sourceTree = "<group>";
 		};
+		4B2E2A581B264837181CF09BD432D401 /* DICE */ = {
+			isa = PBXGroup;
+			children = (
+				A79A9A33ACB0C39A98E25B567FBA33FE /* DependencyKey.swift */,
+				9B04C8E2F8AE0FB36ED82ACC8630B309 /* DICE.swift */,
+				9601BBA2F1182784C8281233F57B90EA /* DIContainer.swift */,
+				84936CAED19D2ACCB24AFC0AEB09521D /* DIContainerBuilder.swift */,
+				E5C87D55C863903808E83C8A81D72B5D /* DIContainerStorage.swift */,
+				2A553D1D14492B041A09E1F5AFE244D9 /* DIObject.swift */,
+				F60768EF637A3F532517AC610DC8ABA1 /* DIScope.swift */,
+				DEF921501F5ACD32ED3372477958F3B5 /* InjectableProperty.swift */,
+				C06DDF6631DD7D141EC2C6D0DD51E106 /* LazyObject.swift */,
+				DE750C513835ECE31E87BACBB17FB7C7 /* WeakObject.swift */,
+				A40E89FD2D2E31A49A808B1294159BED /* Extensions */,
+				CDF047497E406D73726206A4EB083AD7 /* Pod */,
+				02BB179A36C3D011D26B24253E9261C9 /* PropertyWrapper */,
+				E2316159AAFBD1F81ECBE84251FF5CDD /* Support Files */,
+				2002DBFBF30639B5ABA386F1CFFD3DB1 /* SwiftUI */,
+			);
+			name = DICE;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4B493EEDCB83BB8A6C5A68F944686454 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B2E2A581B264837181CF09BD432D401 /* DICE */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		6F7D5AC73070DFA469835AD1CD275F4B /* Pods-DICE_ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +211,16 @@
 			);
 			name = "Pods-DICE_ExampleTests";
 			path = "Target Support Files/Pods-DICE_ExampleTests";
+			sourceTree = "<group>";
+		};
+		A40E89FD2D2E31A49A808B1294159BED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B59D207874F6598E79E4D8B784A8AF2E /* DICE+SwiftUI.swift */,
+				10D9056AD142175C9F54AF2AFFE455E3 /* NSRecursiveLock.swift */,
+			);
+			name = Extensions;
+			path = DICE/Classes/Extensions;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -232,19 +241,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C9210ECF0FCB92BA61CAFEB63733B160 /* Development Pods */ = {
+		CDF047497E406D73726206A4EB083AD7 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				F66F04F6D2417DB7B3F4BF54A07E591E /* DICE */,
+				59664C2D755D926136F0951E8927CEC3 /* DICE.podspec */,
+				E5AA3349E38F40D4F8C0702EBF65BD74 /* LICENSE */,
+				A25CFFCCDAF402A6103EE5F592EF9B2D /* README.md */,
 			);
-			name = "Development Pods";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				C9210ECF0FCB92BA61CAFEB63733B160 /* Development Pods */,
+				4B493EEDCB83BB8A6C5A68F944686454 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				C4BF08F36F05F111ACB43D7F68588D21 /* Products */,
 				E2F53D20AE8AF9BBB1D853610037383A /* Targets Support Files */,
@@ -259,6 +270,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E2316159AAFBD1F81ECBE84251FF5CDD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D09B4A41037C2F012E2F1B4E9B287496 /* DICE.modulemap */,
+				726D97590400E300A178C8641A1E40AC /* DICE.xcconfig */,
+				12E2A9EF3345F5F1559C222DD5249000 /* DICE-dummy.m */,
+				D3DE857106443B230B3915CD5EF4EBFE /* DICE-Info.plist */,
+				F63409E24AD3827ACA212D2B264BC9B8 /* DICE-prefix.pch */,
+				6B1F68FFAA70B77AE95FC571A7434733 /* DICE-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DICE";
+			sourceTree = "<group>";
+		};
 		E2F53D20AE8AF9BBB1D853610037383A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,36 +293,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F66F04F6D2417DB7B3F4BF54A07E591E /* DICE */ = {
-			isa = PBXGroup;
-			children = (
-				D8E5C640E731F2879652BE6C59035E22 /* DICE.swift */,
-				8AF9F7C6781D6C9F1CEFF794ABBCB663 /* DIContainer.swift */,
-				07E66B8D3B22A48061B370E481664B52 /* DIContainerBuilder.swift */,
-				CAAE4C64CEBD1B23640DB19BD2C96507 /* DIContainerStorage.swift */,
-				7F6376813BB3036250A56CAD5B48F6C2 /* DIObject.swift */,
-				32B48E7CA9204461C5689A9C63E61F7F /* DIScope.swift */,
-				BA30E58E3A9AD2B58C59DCF71F5321A7 /* InjectableProperty.swift */,
-				24EE5261A78DEA3F946B9B3F6FEF7F94 /* LazyObject.swift */,
-				F8238C10B7E1E7A73DFE46EE71F3E3E7 /* WeakObject.swift */,
-				0C20093242792509E2231F3021BC3A40 /* Extensions */,
-				4336E973298482F7B8ABDFDADD19EF52 /* Pod */,
-				2E7A4F58C9B16E97158C1052E69408AC /* PropertyWrapper */,
-				290669CDA3DD7FC2A05A63E479AF3861 /* Support Files */,
-				3FF7DCE2B7F9F55B62A8F6F215B23F21 /* SwiftUI */,
-			);
-			name = DICE;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		016BA65297F3B4D950599D0C82B69A65 /* Headers */ = {
+		1F351AF776435279CBABD6694E1321BD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59E9F1980D25C86357DC07A79C55E09F /* DICE-umbrella.h in Headers */,
+				52C2203634390B1F258D51308AC68D63 /* DICE-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,12 +363,12 @@
 		};
 		DD653DCF41FD040E69EC5DF2CF1713E5 /* DICE */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26FBDE87A8092B169294C881F5BD5C34 /* Build configuration list for PBXNativeTarget "DICE" */;
+			buildConfigurationList = 6E640B845BC164943DB9B307FFB13724 /* Build configuration list for PBXNativeTarget "DICE" */;
 			buildPhases = (
-				016BA65297F3B4D950599D0C82B69A65 /* Headers */,
-				A2F6C262855101D60846844907E868F1 /* Sources */,
-				51DC28B15DB4E2B4C7832AB5A269043C /* Frameworks */,
-				98970F55F0E4632BABA15A2B5A3AF5A4 /* Resources */,
+				1F351AF776435279CBABD6694E1321BD /* Headers */,
+				4E91829C34A099A2AB42D2611C5E2CDF /* Sources */,
+				BD681D382A4DFC6ACEA65BA580D643FE /* Frameworks */,
+				BDF5C2B78FBFAEE0F640364A9351A750 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -420,7 +423,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98970F55F0E4632BABA15A2B5A3AF5A4 /* Resources */ = {
+		BDF5C2B78FBFAEE0F640364A9351A750 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -446,26 +449,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2F6C262855101D60846844907E868F1 /* Sources */ = {
+		4E91829C34A099A2AB42D2611C5E2CDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E900F0EB30FEDCEE47A8BEA18AD160E /* DICE+SwiftUI.swift in Sources */,
-				BACCCB26C6B002F6F4A865E50F23FE64 /* DICE-dummy.m in Sources */,
-				26E5E29CF806B98ED4ED2236EF5372F2 /* DICE.swift in Sources */,
-				F95856F80EE6048E446B5F3A16F5EC63 /* DIContainer.swift in Sources */,
-				E2DB5472E9C2F36B64CEE508E0BDDDA7 /* DIContainerBuilder.swift in Sources */,
-				FAC8D1AC4C5609CF122AEA619D79BDE5 /* DIContainerEnvironmentKey.swift in Sources */,
-				22ED7A7994810AAC5A56896D17C64288 /* DIContainerStorage.swift in Sources */,
-				64EB3119EA56E0125B996D2AEA7F5E9D /* DIObject.swift in Sources */,
-				B1AAABA1F4402A1E28D2A62D6FAF1840 /* DIScope.swift in Sources */,
-				45E9C150A30D95BE31362459BDC010EE /* EnvironmentInjected.swift in Sources */,
-				1597B5CC86D2F4F6D148C43C21DA8EDA /* EnvironmentObservableInjected.swift in Sources */,
-				2478DA5524F9BB704CF95815AAF32346 /* InjectableProperty.swift in Sources */,
-				7F3ABC3E0B44F51C8BBA43BFD94DA6B3 /* Injected.swift in Sources */,
-				06A4C19FB0032ADEC27E3FE1D08730A5 /* LazyObject.swift in Sources */,
-				2EA2CE8048DB29E66914192B709DED88 /* NSRecursiveLock.swift in Sources */,
-				EA63E03B7ACF1C23A14143C59F1D388A /* WeakObject.swift in Sources */,
+				40AE5A0A8FC50071968C2A4B809FEECF /* DependencyKey.swift in Sources */,
+				8FE62C75108513124D79B118412A4201 /* DICE+SwiftUI.swift in Sources */,
+				35C2C6CD8FFB51A2DC623553A459FD83 /* DICE-dummy.m in Sources */,
+				C50613683264B0C8423B88CE77A2BE2E /* DICE.swift in Sources */,
+				DA1229FD47AA68CB145368C318A0060C /* DIContainer.swift in Sources */,
+				0E5B5A1D308441028397F7DB186D6D1D /* DIContainerBuilder.swift in Sources */,
+				1CD28AE40B07D72894F13F6FDBDBCC45 /* DIContainerEnvironmentKey.swift in Sources */,
+				AFDD4BCF8C02FA863DED05F046F35523 /* DIContainerStorage.swift in Sources */,
+				25676BBEF8C063F7C5760D8EF95D7AAE /* DIObject.swift in Sources */,
+				40C748C9C8B9B0CCE798AD6A087CEEF3 /* DIScope.swift in Sources */,
+				E7C7615EC96FF4702F9A80AD8FBD05FF /* EnvironmentInjected.swift in Sources */,
+				4FA50B1CF2132E2C417999FF9E4A7BED /* EnvironmentObservableInjected.swift in Sources */,
+				2D40206D375AC6614808E23E1D224CC0 /* InjectableProperty.swift in Sources */,
+				261AD814DB79AE10B3A57099F4B1021C /* Injected.swift in Sources */,
+				5CCAB47CAED758D23F3B9E25D84D9675 /* LazyObject.swift in Sources */,
+				8222C66E5C8EA4C7F076752FBD6C03C2 /* NSRecursiveLock.swift in Sources */,
+				06B25B6F3D9F2B987A43D8FF6A9180E1 /* WeakObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,73 +587,6 @@
 			};
 			name = Release;
 		};
-		41069E076E6EC1C5919E926790360432 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77CFDA8C52A07B30862E9FB868593DB4 /* DICE.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DICE/DICE-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DICE/DICE-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DICE/DICE.modulemap";
-				PRODUCT_MODULE_NAME = DICE;
-				PRODUCT_NAME = DICE;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6372049BFB9EC36063C1F77B3DA081AD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77CFDA8C52A07B30862E9FB868593DB4 /* DICE.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DICE/DICE-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DICE/DICE-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DICE/DICE.modulemap";
-				PRODUCT_MODULE_NAME = DICE;
-				PRODUCT_NAME = DICE;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		842F3645C30F5D08EA1324F4B8612886 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB87974B18A48437F06C6542F0B614E3 /* Pods-DICE_Example.debug.xcconfig */;
@@ -679,6 +616,73 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		978D2180A8338C539738DA197027399A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 726D97590400E300A178C8641A1E40AC /* DICE.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DICE/DICE-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DICE/DICE-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DICE/DICE.modulemap";
+				PRODUCT_MODULE_NAME = DICE;
+				PRODUCT_NAME = DICE;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A72A6306E00FCAA7A5E6BD177023BDF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 726D97590400E300A178C8641A1E40AC /* DICE.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DICE/DICE-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DICE/DICE-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DICE/DICE.modulemap";
+				PRODUCT_MODULE_NAME = DICE;
+				PRODUCT_NAME = DICE;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -823,15 +827,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		26FBDE87A8092B169294C881F5BD5C34 /* Build configuration list for PBXNativeTarget "DICE" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				41069E076E6EC1C5919E926790360432 /* Debug */,
-				6372049BFB9EC36063C1F77B3DA081AD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		409F7070A212A529C217725708006FC4 /* Build configuration list for PBXNativeTarget "Pods-DICE_ExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -846,6 +841,15 @@
 			buildConfigurations = (
 				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
 				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E640B845BC164943DB9B307FFB13724 /* Build configuration list for PBXNativeTarget "DICE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72A6306E00FCAA7A5E6BD177023BDF4 /* Debug */,
+				978D2180A8338C539738DA197027399A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
