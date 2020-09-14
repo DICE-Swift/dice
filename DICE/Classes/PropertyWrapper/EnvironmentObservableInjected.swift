@@ -16,7 +16,7 @@ import Combine
 @propertyWrapper
 public struct EnvironmentObservableInjected<Value: ObservableObject>: DynamicProperty {
     
-    private let tag: String?
+    private var tag: String? = ""
     
     @ObservedObject private var _wrappedValue: Value
     public var wrappedValue: Value {
@@ -26,6 +26,12 @@ public struct EnvironmentObservableInjected<Value: ObservableObject>: DynamicPro
     /// The binding value, as "unwrapped" by accessing `$foo` on a `@Binding` property.
     public var projectedValue: ObservedObject<Value>.Wrapper {
         return __wrappedValue.projectedValue
+    }
+    
+    public init() {
+        let bundle = Bundle(for: Value.self)
+        let resolvedValue = Environment(\.container).wrappedValue.resolve(tag: tag, bundle: bundle) as Value
+        self.__wrappedValue = ObservedObject<Value>(initialValue: resolvedValue)
     }
     
     public init(_ tag: String?) {
