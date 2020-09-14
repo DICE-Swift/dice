@@ -1,5 +1,5 @@
 PODS:
-  - DICE (0.1.0)
+  - DICE (0.9.0)
 
 DEPENDENCIES:
   - DICE (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DICE: c4a678c03a1d2a3d527d2b939c87b3007df29cbb
+  DICE: aeb123a5c7c7bc91c07dec6dfd7344d2a49c8540
 
 PODFILE CHECKSUM: 4177fc788021abcb555dc30f8233e6ad706455c9
 
